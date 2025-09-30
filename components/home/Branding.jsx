@@ -5,6 +5,7 @@ import Image from "next/image";
 // import uiux from "/public/uiux.webp";
 
 import React from "react";
+import LogoBadge from "../common/LogoBadge";
 
 export default function Branding() {
 	const style = {
@@ -21,11 +22,7 @@ export default function Branding() {
 	return (
 		<div className="flex w-full flex-col items-center justify-center gap-20">
 			<div className="flex flex-col items-center justify-center gap-4 text-center">
-				<div className="group flex cursor-pointer items-center justify-center gap-2">
-					<Image alt="logo" src={"/logo/logo.svg"} width={30} height={30} />
-					{/* <Logo className="logo" /> */}
-					<p className="text-[16px] font-medium text-[#f97316]">Services</p>
-				</div>
+				<LogoBadge title="Services" />
 				<h1 className="text-[40px] font-bold leading-[60px] md:text-[52px]">
 					Apps, Websites & Branding
 				</h1>

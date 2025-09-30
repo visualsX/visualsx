@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LogoBadge from "../common/LogoBadge";
 // import Care from "/icons/care.svg";
 // import Design from "/icons/design.svg";
 // import Lighting from "/icons/lighting.svg";
@@ -12,11 +13,7 @@ export default function WhyWorkWithUs() {
 	return (
 		<div className="flex w-full flex-col items-center justify-center gap-20">
 			<div className="flex max-w-2xl flex-col items-center justify-center gap-4 text-center">
-				<div className="group flex cursor-pointer items-center justify-center gap-2">
-					{/* <Logo className="logo" /> */}
-					<Image alt="logo" src={"/logo/logo.svg"} width={30} height={30} />
-					<p className="text-[16px] font-medium text-[#f97316]">Features</p>
-				</div>
+				<LogoBadge title="Features" />
 				<h1 className="text-[40px] font-bold leading-[60px] md:text-[52px]">
 					Here is why you'll love working with us
 				</h1>

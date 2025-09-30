@@ -6,17 +6,14 @@ import React from "react";
 import Image from "next/image";
 import FAQ from "../FAQ";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
+import LogoBadge from "../common/LogoBadge";
 
 export default function FAQs() {
 	return (
 		<div className="flex w-full flex-col items-center justify-center gap-20 max-w-[750px]">
 
 			<div className="flex flex-col items-center justify-center gap-4 text-center">
-				<div className="group flex cursor-pointer items-center justify-center gap-2">
-					{/* <Logo className="logo" /> */}
-					<Image alt="logo" src={"/logo/logo.svg"} width={30} height={30} />
-					<p className="text-[16px] font-medium text-[#f97316]">Faqs</p>
-				</div>
+				<LogoBadge title="Faqs" />
 				<h1 className="text-[40px] font-bold leading-[60px] md:text-[52px]">
 					Frequently Asked Questions
 				</h1>

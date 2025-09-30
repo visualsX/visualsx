@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LogoBadge from "../common/LogoBadge";
 // import Develop from "/public/icons/develop.svg";
 // import Monitize from "/public/icons/monitize.svg";
 // import Onboarded from "/public/icons/onboarded.svg";
@@ -10,11 +11,7 @@ export default function HowWeWorks() {
 	return (
 		<div className="w-full space-y-20">
 			<div className="flex flex-col items-center justify-center gap-4 text-center">
-				<div className="group flex cursor-pointer items-center justify-center gap-2">
-					{/* <Logo className="logo" /> */}
-					<Image alt="logo" src={"/logo/logo.svg"} width={30} height={30} />
-					<p className="text-[16px] font-medium text-[#f97316]">Process</p>
-				</div>
+				<LogoBadge title="Process" />
 				<h1 className="text-[40px] font-bold leading-[60px] md:text-[52px]">
 					How we work with you
 				</h1>

@@ -12,12 +12,11 @@ export default function Banner() {
 	return (
 		<div className="mt-36 w-full space-y-20 lg:space-y-40">
 			<div className="relative z-50 my-auto flex flex-col items-center justify-center gap-6 px-2">
-				<h1 className="max-w-4xl text-4xl font-bold sm:text-[50px] sm:leading-[70px] md:text-[70px]">
-					Get Your MVP to Market in Just 30 days
+				<h1 className="max-w-5xl text-4xl font-bold sm:text-[50px] sm:leading-[70px] md:text-[70px]">
+					<span className="text-[#f97316]">Build & Launch</span> Your Startup 70% Cheaper & 5x Faster
 				</h1>
 				<p className="max-w-3xl text-base font-normal sm:text-xl">
-					We will help you build a fully functional SaaS MVP within 30 days.
-					Everything from designing the app to launching it to the market.
+					Launch your product faster with efficient development that cuts time and costs, ensuring top-notch quality and a confident rollout.
 				</p>
 				<div className="flex items-center justify-center gap-2"></div>
 				<div className="hidden lg:block">

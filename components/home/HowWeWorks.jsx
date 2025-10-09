@@ -9,7 +9,7 @@ import LogoBadge from "../common/LogoBadge";
 
 export default function HowWeWorks() {
 	return (
-		<div className="w-full space-y-20">
+		<div id="howWeWorks" className="w-full space-y-20">
 			<div className="flex flex-col items-center justify-center gap-4 text-center">
 				<LogoBadge title="Process" />
 				<h1 className="text-[40px] font-bold leading-[60px] md:text-[52px]">

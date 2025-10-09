@@ -1,0 +1,67 @@
+
+/* ============================================== */
+/* ====== Sparkling Button Start ================== */
+/* ============================================== */
+
+@keyframes sparkleShift {
+    0% {
+      background-position: 0 0, 40px 20px, 80px 40px;
+    }
+    50% {
+      background-position: 20px 10px, 60px 30px, 100px 60px;
+    }
+    100% {
+      background-position: 0 0, 40px 20px, 80px 40px;
+    }
+  }
+  
+  /* === Moving sparkles === */
+  .animate-sparkle-move {
+    background-image:
+      radial-gradient(circle 1px, rgba(255,255,255,0.8) 50%, transparent 50%),
+      radial-gradient(circle 1px, rgba(255,255,255,0.6) 50%, transparent 50%),
+      radial-gradient(circle 1px, rgba(255,255,255,0.9) 50%, transparent 50%);
+    background-size:
+      20px 20px,
+      30px 30px,
+      25px 25px;
+    background-position:
+      0 0,
+      10px 10px,
+      5px 15px;
+    animation: sparkleShift 4s linear infinite;
+    mix-blend-mode: screen;
+    filter: blur(0.3px);
+    will-change: background-position;
+  }
+  
+  /* === Static sparkles (don’t move) === */
+  .sparkle-static {
+    background-image:
+      radial-gradient(circle 1px, rgba(255,255,255,0.7) 50%, transparent 50%),
+      radial-gradient(circle 1px, rgba(255,255,255,0.5) 50%, transparent 50%),
+      radial-gradient(circle 1px, rgba(255,255,255,0.8) 50%, transparent 50%),
+      radial-gradient(circle 1px, rgba(255,255,255,0.9) 50%, transparent 50%),
+      radial-gradient(circle 1px, rgba(255,255,255,0.6) 50%, transparent 50%),
+      radial-gradient(circle 1px, rgba(255,255,255,0.75) 50%, transparent 50%);
+    background-size:
+      22px 22px,
+      28px 28px,
+      26px 26px,
+      30px 30px,
+      25px 25px,
+      18px 18px;
+    background-position:
+      5px 10px,
+      15px 25px,
+      35px 40px,
+      55px 15px,
+      75px 50px,
+      90px 30px;
+    mix-blend-mode: screen;
+    filter: blur(0.4px);
+  }
+
+/* ============================================== */
+/* ====== Sparkling Button End ================== */
+/* ============================================== */

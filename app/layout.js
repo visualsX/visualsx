@@ -7,32 +7,44 @@ const bricolage = Bricolage_Grotesque({
   display: "swap",
 });
 
+export const viewport = {
+  themeColor: "#111111", // Matching the dark theme
+};
+
 export const metadata = {
-  title: "visualsX – Apps, Websites & Branding",
+  title: {
+    default: "visualsX – Vision into Reality",
+    template: "%s | visualsX"
+  },
   description:
-    "visualsX provides professional branding, website development, and mobile app solutions. We create, design, and deploy digital products that help businesses grow.",
+    "Launch your MVP in just 30 days with visualsX. We provide high-performance branding, website development, and mobile app solutions for startups and enterprises.",
   keywords: [
-    "branding",
+    "MVP development",
+    "branding agency",
     "website development",
     "mobile app development",
     "UI/UX design",
-    "web design",
-    "digital solutions",
+    "startup implementation",
+    "Next.js developers",
+    "React Native",
+    "digital transformation",
     "visualsX",
   ],
-  metadataBase: new URL("https://visualsx.vercel.app/"), // change to your real domain
+  metadataBase: new URL("https://visualsx.vercel.app/"),
+  authors: [{ name: "visualsX Team" }],
+  creator: "visualsX",
   openGraph: {
-    title: "visualsX – Apps, Websites & Branding",
+    title: "visualsX – Launch your MVP in 30 Days",
     description:
-      "We help businesses stand out with branding, web design, and mobile app development.",
+      "We act as your technical co-founder, transforming your ideas into market-ready products with stunning branding and robust code.",
     url: "https://visualsx.vercel.app/",
     siteName: "visualsX",
     images: [
       {
-        url: "/visualsx-intro.png", // put an image in /public
+        url: "/visualsx-intro.png",
         width: 1200,
         height: 630,
-        alt: "visualsX – branding and development",
+        alt: "visualsX – Vision into Reality",
       },
     ],
     locale: "en_US",
@@ -40,11 +52,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "visualsX – Apps, Websites & Branding",
+    title: "visualsX – Vision into Reality",
     description:
-      "Professional branding, website design, and mobile app solutions.",
-    images: ["/visualsx-intro.png"], // same as OpenGraph
-    creator: "@iosamajavaid", // optional
+      "Launch your MVP in just 30 days. Professional branding, web, and mobile app development.",
+    images: ["/visualsx-intro.png"],
+    creator: "@visualsx",
   },
   icons: {
     icon: "/favicon.ico",
@@ -52,7 +64,17 @@ export const metadata = {
     apple: "/logo/logo-512x512.png",
   },
   manifest: "/site.webmanifest",
-  themeColor: "#fff8ef", // adjust to match your brand
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

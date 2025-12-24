@@ -1,5 +1,6 @@
 import { Bricolage_Grotesque } from "next/font/google";
-import "./globals.css";
+import "./stylings/globals.css";
+import "./stylings/buttons.css";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],

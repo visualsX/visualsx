@@ -65,3 +65,99 @@
 /* ============================================== */
 /* ====== Sparkling Button End ================== */
 /* ============================================== */
+
+/* ============================================== */
+/* ====== Large Card Sparkles Start ============= */
+/* ============================================== */
+
+@keyframes sparkleShiftLarge {
+  0% {
+    background-position: 0 0, 100px 50px, 200px 100px;
+  }
+  50% {
+    background-position: 50px 25px, 150px 75px, 250px 150px;
+  }
+  100% {
+    background-position: 0 0, 100px 50px, 200px 100px;
+  }
+}
+
+.animate-sparkle-large {
+  background-image:
+    radial-gradient(circle 1.5px, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(circle 1px, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(circle 2px, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(circle 1.5px, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(circle 1px, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(circle 2.5px, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(circle 1.2px, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(circle 0.8px, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(circle 2.2px, rgba(255,255,255,0.3) 50%, transparent 50%);
+  background-size:
+    350px 350px,
+    450px 450px,
+    550px 550px,
+    300px 300px,
+    400px 400px,
+    500px 500px,
+    250px 250px,
+    600px 600px,
+    350px 350px;
+  background-position:
+    0 0,
+    100px 50px,
+    50px 100px,
+    200px 200px,
+    150px 250px,
+    300px 100px,
+    20px 220px,
+    80px 80px,
+    180px 40px;
+  animation: sparkleShiftLarge 15s linear infinite;
+  mix-blend-mode: screen;
+  will-change: background-position;
+}
+
+.sparkle-static-large {
+  background-image:
+    radial-gradient(circle 1.5px, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(circle 1px, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(circle 2px, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(circle 1px, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(circle 1.5px, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(circle 1px, rgba(255,255,255,0.6) 50%, transparent 50%),
+    radial-gradient(circle 2px, rgba(255,255,255,0.3) 50%, transparent 50%),
+    radial-gradient(circle 1.5px, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(circle 1.2px, rgba(255,255,255,0.5) 50%, transparent 50%),
+    radial-gradient(circle 0.9px, rgba(255,255,255,0.2) 50%, transparent 50%),
+    radial-gradient(circle 2.5px, rgba(255,255,255,0.4) 50%, transparent 50%),
+    radial-gradient(circle 1.8px, rgba(255,255,255,0.6) 50%, transparent 50%);
+  background-size:
+    400px 400px,
+    500px 500px,
+    600px 600px,
+    700px 700px,
+    350px 350px,
+    450px 450px,
+    550px 550px,
+    650px 650px,
+    250px 250px,
+    550px 550px,
+    300px 300px,
+    450px 450px;
+  background-position:
+    20px 20px,
+    100px 150px,
+    200px 50px,
+    40px 100px,
+    300px 300px,
+    150px 50px,
+    50px 250px,
+    250px 100px,
+    10px 80px,
+    400px 20px,
+    120px 180px,
+    60px 220px;
+  mix-blend-mode: screen;
+}
+

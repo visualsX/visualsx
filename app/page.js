@@ -5,6 +5,8 @@ import Footer from "@/components/home/Footer";
 import Header from "@/components/home/Header";
 import HowWeWorks from "@/components/home/HowWeWorks";
 import ReadyToLaunch from "@/components/home/ReadyToLaunch";
+import RecentProjects from "@/components/home/RecentProjects";
+import Testimonials from "@/components/home/Testimonials";
 import WhyWorkWithUs from "@/components/home/WhyWorkWithUs";
 // import ReadyToLaunch from "@/components/Home/ReadyToLaunch";
 
@@ -17,11 +19,13 @@ export default function Home() {
       </div>
 
       {/* ========================= */}
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-[100px] px-4 md:gap-[200px]">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-[80px] px-4 sm:gap-[100px] md:gap-[200px]">
         <HowWeWorks />
         <Branding />
         <WhyWorkWithUs />
+        <RecentProjects />
         <ReadyToLaunch />
+        <Testimonials />
         <FAQs />
         <Footer />
         {/* === */}

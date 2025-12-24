@@ -28,7 +28,18 @@ const nextConfig = {
         return config
     },
 
-    // ...other config
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'placehold.co',
+            },
+            {
+                protocol: 'https',
+                hostname: 'avatars.githubusercontent.com',
+            },
+        ],
+    },
 
 };
 

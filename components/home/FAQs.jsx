@@ -10,14 +10,14 @@ import LogoBadge from "../common/LogoBadge";
 
 export default function FAQs() {
 	return (
-		<div className="flex w-full flex-col items-center justify-center gap-20 max-w-[750px]">
+		<div className="flex w-full max-w-full flex-col items-center justify-center gap-12 px-4 sm:max-w-[750px] sm:gap-16 sm:px-0 md:gap-20">
 
-			<div className="flex flex-col items-center justify-center gap-4 text-center">
+			<div className="flex flex-col items-center justify-center gap-3 text-center sm:gap-4">
 				<LogoBadge title="Faqs" />
-				<h1 className="text-[40px] font-bold leading-[60px] md:text-[52px]">
+				<h1 className="text-[32px] font-bold leading-[48px] sm:text-[40px] sm:leading-[56px] md:text-[52px] md:leading-[60px]">
 					Frequently Asked Questions
 				</h1>
-				<p className="__className_7b1666 text-xl font-normal leading-[26px]">
+				<p className="__className_7b1666 text-base font-normal leading-[24px] sm:text-lg sm:leading-[26px] md:text-xl">
 					Here are some of the most common questions we get asked.
 				</p>
 			</div>
@@ -30,7 +30,7 @@ export default function FAQs() {
 				{
 					faqs.map((faq, index) => (
 						<AccordionItem key={index} value={`item-${index + 1}`}>
-							<AccordionTrigger className={'text-xl'}>{faq.question}</AccordionTrigger>
+							<AccordionTrigger className="text-base sm:text-lg md:text-xl">{faq.question}</AccordionTrigger>
 							<AccordionContent className="flex flex-col gap-4 text-balance">
 								{faq.answer}
 							</AccordionContent>

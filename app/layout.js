@@ -33,6 +33,11 @@ export const metadata = {
   metadataBase: new URL("https://visualsx.vercel.app/"),
   authors: [{ name: "visualsX Team" }],
   creator: "visualsX",
+  publisher: "visualsX",
+  category: "technology",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "visualsX – Launch your MVP in 30 Days",
     description:
@@ -64,6 +69,9 @@ export const metadata = {
     apple: "/logo/logo-512x512.png",
   },
   manifest: "/site.webmanifest",
+  verification: {
+    google: "google-site-verification=93nmkMf06GP2PEGixkqL8fhPLbLFWVu2rI",
+  },
   robots: {
     index: true,
     follow: true,

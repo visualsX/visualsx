@@ -10,7 +10,7 @@ export default function Testimonials() {
 	const testimonials = [
 		{
 			name: "Nasir Waheed",
-			role: "Finance Director, NIE",
+			role: "Senior Lecturer  @NIE",
 			image: "https://avatars.githubusercontent.com/u/93568072",
 			content:
 				"The Finance Management System built by visualsX has completely transformed our auditing and budgeting processes. It's secure, fast, and handles our complex financial data with ease.",
@@ -19,7 +19,7 @@ export default function Testimonials() {
 		},
 		{
 			name: "Imad Ahmad",
-			role: "Founder, GardenHub",
+			role: "Founder @GardenHub",
 			image: "https://placehold.co/100x100/png",
 			content:
 				"GardenHub is now the go-to marketplace for plant lovers in the UAE, thanks to the stunning platform visualsX created. The smooth shopping experience has significantly increased our customer retention.",
@@ -28,7 +28,7 @@ export default function Testimonials() {
 		},
 		{
 			name: "Muhammad Jamil",
-			role: "Operations Head, Hysabat",
+			role: "Operations Head @Hysabat",
 			image: "https://placehold.co/100x100/png",
 			content:
 				"Our ERP solution 'Hysabat' required a sophisticated architecture, and visualsX delivered per excellence. The system is intuitive and has optimized our business operations across all departments.",
@@ -37,7 +37,7 @@ export default function Testimonials() {
 		},
 		{
 			name: "Wafiullah Salarzai",
-			role: "CEO, JMM Technologies",
+			role: "CEO @JMM Technologies",
 			image: "https://avatars.githubusercontent.com/u/130735471?v=4",
 			content:
 				"As a software agency, we needed a website that reflects our technical prowess. visualsX delivered a high-performance, visually striking site that has helped us close more deals.",

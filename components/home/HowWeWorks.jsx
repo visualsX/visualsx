@@ -16,8 +16,8 @@ export default function HowWeWorks() {
 			<div className="relative grid w-full gap-6 sm:gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
 				<div className="group relative flex min-h-[280px] w-full flex-col items-start justify-start gap-4 overflow-hidden rounded-[24px] bg-[#191919] p-6 sm:min-h-[300px] sm:rounded-[28px] sm:p-7 md:rounded-[30px] md:p-8">
 					{/* Sparkles */}
-					<span className="animate-sparkle-large absolute inset-0 rounded-[inherit]"></span>
-					<span className="sparkle-static-large absolute inset-0 rounded-[inherit]"></span>
+					{/* <span className="animate-sparkle-large absolute inset-0 rounded-[inherit]"></span>
+					<span className="sparkle-static-large absolute inset-0 rounded-[inherit]"></span> */}
 					
 					<div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary sm:h-14 sm:w-14 md:h-16 md:w-16">
 						<Image alt="icon" src={"/icons/onboarded.svg"} width={28} height={28} className="h-[28px] w-[28px] sm:h-[30px] sm:w-[30px] md:h-[32px] md:w-[32px]" />
@@ -32,8 +32,8 @@ export default function HowWeWorks() {
 				</div>
 				<div className="group relative flex min-h-[280px] w-full flex-col items-start justify-start gap-4 overflow-hidden rounded-[24px] bg-[#191919] p-6 sm:min-h-[300px] sm:rounded-[28px] sm:p-7 md:rounded-[30px] md:p-8">
 					{/* Sparkles */}
-					<span className="animate-sparkle-large absolute inset-0 rounded-[inherit]"></span>
-					<span className="sparkle-static-large absolute inset-0 rounded-[inherit]"></span>
+					{/* <span className="animate-sparkle-large absolute inset-0 rounded-[inherit]"></span>
+					<span className="sparkle-static-large absolute inset-0 rounded-[inherit]"></span> */}
 
 					<div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary sm:h-14 sm:w-14 md:h-16 md:w-16">
 						<Image alt="icon" src={"/icons/onboarded.svg"} width={28} height={28} className="h-[28px] w-[28px] sm:h-[30px] sm:w-[30px] md:h-[32px] md:w-[32px]" />
@@ -50,8 +50,8 @@ export default function HowWeWorks() {
 				</div>
 				<div className="group relative flex min-h-[280px] w-full flex-col items-start justify-start gap-4 overflow-hidden rounded-[24px] bg-[#191919] p-6 sm:min-h-[300px] sm:rounded-[28px] sm:p-7 md:rounded-[30px] md:p-8">
 					{/* Sparkles */}
-					<span className="animate-sparkle-large absolute inset-0 rounded-[inherit]"></span>
-					<span className="sparkle-static-large absolute inset-0 rounded-[inherit]"></span>
+					{/* <span className="animate-sparkle-large absolute inset-0 rounded-[inherit]"></span>
+					<span className="sparkle-static-large absolute inset-0 rounded-[inherit]"></span> */}
 
 					<div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary sm:h-14 sm:w-14 md:h-16 md:w-16">
 						<Image alt="icon" src={"/icons/monitize.svg"} width={28} height={28} className="h-[28px] w-[28px] sm:h-[30px] sm:w-[30px] md:h-[32px] md:w-[32px]" />

@@ -15,7 +15,7 @@ export default function RecentProjects() {
 			description: "E-commerce platform for plants and gardening supplies with seamless shopping experience.",
 			category: "E-Commerce",
 			bgColor: "#f3e8ff",
-			link: "https://client.gardenhub.ae/"
+			link: "https://gardenhub.ae/"
 		},
 		{
 			name: "Hysabat",

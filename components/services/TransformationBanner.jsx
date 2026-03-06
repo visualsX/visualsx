@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TransformationBanner() {
   return (
-    <section className="w-full px-4">
+    <section className="w-full">
       <div className="relative overflow-hidden rounded-[40px] bg-black px-8 py-16 text-center text-white">
         {/* Grid Background Pattern */}
         <div className="absolute inset-0 opacity-20" 

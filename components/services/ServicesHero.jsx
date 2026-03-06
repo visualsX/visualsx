@@ -3,7 +3,7 @@ import LogoBadge from "../common/LogoBadge";
 
 export default function ServicesHero() {
   return (
-    <section className="flex flex-col items-center justify-center space-y-8 px-4 text-center">
+    <section className="flex flex-col items-center justify-center space-y-8 text-center">
       <div className="flex items-center gap-2 rounded-full bg-white/50 px-4 py-1.5 text-sm font-medium shadow-sm ring-1 ring-black/5">
         <span className="flex h-2 w-2 rounded-full bg-[#f97316] animate-pulse" />
         Your Tech Partner, Engineering Your Success

@@ -13,7 +13,7 @@ export default function PortfolioPage() {
     return (
         <>
             <div className="relative mb-24 flex w-full flex-col text-center">
-                <div className="mx-auto mt-20 max-w-4xl px-4">
+                <div className="mx-auto max-w-4xl px-4">
                     <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                         Our Work Speaks <span className="text-primary">for Itself</span>
                     </h1>

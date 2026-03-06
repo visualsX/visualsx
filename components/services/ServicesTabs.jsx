@@ -41,7 +41,6 @@ export default function ServicesTabs({ webItems, mobileItems }) {
                 title="Web Development Services We Offer"
                 subtitle="Building modern, scalable web solutions tailored to your business"
                 items={webItems}
-                className="py-0!"
               />
             </div>
           ) : (
@@ -50,7 +49,6 @@ export default function ServicesTabs({ webItems, mobileItems }) {
                 title="Mobile Development Services We Offer"
                 subtitle="High-performance native and hybrid mobile applications"
                 items={mobileItems}
-                className="py-0!"
               />
             </div>
           )}

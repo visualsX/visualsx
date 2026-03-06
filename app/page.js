@@ -48,7 +48,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="relative flex max-h-[80vh] mb-24 pb-10 w-full flex-col text-center md:max-h-screen">
+      <div className="relative flex max-h-[80vh] pb-10 w-full flex-col text-center md:max-h-screen">
         <Banner />
       </div>
 

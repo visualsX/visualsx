@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import SparklingButton from "../ui/sparkling-button";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, WhatsApp } from "lucide-react";
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function Header() {
 	};
 
 	return (
-		<header className="relative mx-auto flex h-16 min-w-[300px] max-w-6xl items-center gap-x-2 rounded-lg bg-black/5 px-3 sm:h-18 sm:gap-x-3 sm:px-4 md:h-20 md:gap-x-4">
+		<header className="sticky top-5 z-[100] mx-auto flex h-16 min-w-[300px] max-w-7xl items-center gap-x-2 rounded-2xl bg-white/60 px-3 backdrop-blur-sm ring-1 ring-black/5 sm:h-18 sm:gap-x-3 sm:px-4 md:h-20 md:gap-x-4">
 			<a href="/" className="z-50">
 				<div className="group flex items-center justify-center gap-2 font-bold text-lg sm:text-xl md:text-2xl">
 					<div className="flex items-center gap-x-1">
@@ -35,7 +35,6 @@ export default function Header() {
 				<SparklingButton name="Services" href="/services" />
 				<SparklingButton name="Portfolio" href="/portfolio" />
 				<SparklingButton name="Careers" href="/careers" />
-				<SparklingButton name="How It Works" href="/#howWeWorks" />
 			</nav>
 
 			{/* Mobile Menu Button */}
@@ -72,13 +71,6 @@ export default function Header() {
 						Careers
 					</Link>
 					<Link 
-						href="/#howWeWorks"
-						onClick={() => setIsOpen(false)}
-						className="rounded-xl px-4 py-3 text-lg font-medium text-gray-800 transition-colors hover:bg-gray-50"
-					>
-						How It Works
-					</Link>
-					<Link 
 						href="https://cal.com/osamajavaid/30min" 
 						target="_blank"
 						onClick={() => setIsOpen(false)}
@@ -89,15 +81,18 @@ export default function Header() {
 				</div>
 			)}
 
-			<aside className="ml-auto hidden md:block">
+			<aside className="ml-auto hidden md:flex items-center gap-x-2">
 				<Link 
 					href="https://cal.com/osamajavaid/30min" 
 					target="_blank" 
-					className="cursor-pointer rounded-full bg-white px-3 py-2.5 text-xs font-semibold text-black sm:px-4 sm:py-3 sm:text-sm md:px-5 md:py-[13px]"
+					className="cursor-pointer rounded-full bg-black px-3 py-2.5 text-xs font-semibold text-white sm:px-4 sm:py-3 sm:text-sm md:px-5 md:py-[13px]"
 				>
 					<span className="hidden sm:inline">Free Product Consultation</span>
 					<span className="sm:hidden">Book Call</span>
 				</Link>
+				{/* <Link href="https://wa.me/923172404444" target="_blank">
+				<Image src={"/icons/whatsapp.svg"} width={42} height={42} alt="whatsapp"/>
+			</Link> */}
 			</aside>
 		</header>
 	);

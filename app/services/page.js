@@ -30,7 +30,7 @@ export default function ServicesPage() {
     ];
 
     return (
-        <main className="min-h-screen mx-auto w-full max-w-7xl bg-[#fff8ef] px-4 space-y-12 sm:space-y-16 lg:space-y-20">
+        <main className="min-h-screen mx-auto w-full max-w-7xl bg-[#fff8ef] space-y-12 sm:space-y-16 lg:space-y-20">
             <ServicesHero />
             <ServicesTabs webItems={webItems} mobileItems={mobileItems} />
             {/* <SuccessStats /> */}

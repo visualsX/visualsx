@@ -32,7 +32,7 @@ export const metadata = {
     "digital transformation",
     "visualsX",
   ],
-  metadataBase: new URL("https://visualsx.vercel.app/"),
+  metadataBase: new URL("https://visualsx.io/"),
   authors: [{ name: "visualsX Team" }],
   creator: "visualsX",
   publisher: "visualsX",
@@ -44,7 +44,7 @@ export const metadata = {
     title: "visualsX – Launch your MVP in 30 Days",
     description:
       "We act as your technical co-founder, transforming your ideas into market-ready products with stunning branding and robust code.",
-    url: "https://visualsx.vercel.app/",
+    url: "https://visualsx.io/",
     siteName: "visualsX",
     images: [
       {
@@ -72,7 +72,7 @@ export const metadata = {
   },
   manifest: "/site.webmanifest",
   verification: {
-    google: "google-site-verification=93nmkMf06GP2PEGixkqL8fhPLbLFWVu2rI",
+    google: "ITKggyclw1RjarownDRZgQL9kO2Gxn6RL5ZURHWct4w",
   },
   robots: {
     index: true,

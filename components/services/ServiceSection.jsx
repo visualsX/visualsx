@@ -9,7 +9,7 @@ export default function ServiceSection({
   className = "" 
 }) {
   return (
-    <section className={`w-full py-20 px-4 ${className}`}>
+    <section className={`w-full ${className}`}>
       <div className="flex flex-col items-center justify-center gap-y-12 sm:gap-y-16 md:gap-y-20">
         <div className="flex flex-col items-center justify-center text-center max-w-4xl">
           {badge && <LogoBadge title={badge} />}

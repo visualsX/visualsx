@@ -52,7 +52,7 @@ export default function CareersPage() {
     ];
 
     return (
-        <main className="min-h-screen bg-[#fff8ef] pt-20">
+        <main className="min-h-screen bg-[#fff8ef]">
             <div className="relative flex w-full flex-col text-center">
                 <div className="mx-auto max-w-4xl px-4">
                     <LogoBadge title="Join Us" />

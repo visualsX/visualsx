@@ -4,7 +4,7 @@ import SectionHeader from "../common/section-header";
 
 export default function WhyWorkWithUs() {
 	return (
-		<div className="flex w-full flex-col items-center justify-center gap-12 px-4 sm:gap-16 md:gap-20">
+		<div className="flex w-full flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20">
 			<SectionHeader
 			badgeTitle={"Features"}
 			title="Here is why you'll love working with us"

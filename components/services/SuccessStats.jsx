@@ -12,7 +12,7 @@ export default function SuccessStats() {
   ];
 
   return (
-    <section className="w-full space-y-12 px-4 sm:space-y-16">
+    <section className="w-full space-y-12 sm:space-y-16">
       <SectionHeader
         badgeTitle={"Stats"}
         title={"Success Key Stats"}

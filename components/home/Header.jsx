@@ -15,7 +15,7 @@ export default function Header() {
 
 	return (
 		<header className="sticky top-5 z-[100] mx-auto flex h-16 min-w-[300px] max-w-7xl items-center gap-x-2 rounded-2xl bg-white/60 px-3 backdrop-blur-sm ring-1 ring-black/5 sm:h-18 sm:gap-x-3 sm:px-4 md:h-20 md:gap-x-4">
-			<a href="/" className="z-50">
+			<Link href="/" className="z-50">
 				<div className="group flex items-center justify-center gap-2 font-bold text-lg sm:text-xl md:text-2xl">
 					<div className="flex items-center gap-x-1">
 						<Image 
@@ -28,7 +28,7 @@ export default function Header() {
 						<span>visualsX.</span>
 					</div>
 				</div>
-			</a>
+			</Link>
 
 			{/* Desktop Navigation */}
 			<nav className="hidden items-center gap-x-1.5 md:flex md:gap-x-2">

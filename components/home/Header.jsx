@@ -70,7 +70,7 @@ export default function Header() {
 					>
 						Careers
 					</Link>
-					<div className="flex items-center w-full bg-amber-400 gap-x-2">
+					<div className="flex items-center w-full gap-x-2">
 						<Link 
 						href="https://cal.com/osamajavaid/30min" 
 						target="_blank"

@@ -4,6 +4,6 @@ export default function robots() {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://visualsx.vercel.app/sitemap.xml',
+        sitemap: 'https://www.visualsx.io/sitemap.xml',
     };
 }

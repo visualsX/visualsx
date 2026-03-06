@@ -32,7 +32,7 @@ export const metadata = {
     "digital transformation",
     "visualsX",
   ],
-  metadataBase: new URL("https://visualsx.io/"),
+  metadataBase: new URL("https://www.visualsx.io/"),
   authors: [{ name: "visualsX Team" }],
   creator: "visualsX",
   publisher: "visualsX",
@@ -44,7 +44,7 @@ export const metadata = {
     title: "visualsX – Launch your MVP in 30 Days",
     description:
       "We act as your technical co-founder, transforming your ideas into market-ready products with stunning branding and robust code.",
-    url: "https://visualsx.io/",
+    url: "https://www.visualsx.io/",
     siteName: "visualsX",
     images: [
       {

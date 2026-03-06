@@ -95,7 +95,7 @@ export default function Testimonials() {
 				{/* Scrollable Container */}
 				<div
 					ref={scrollContainerRef}
-					className="scrollbar-hide flex gap-4 overflow-x-auto scroll-smooth px-4 pb-4 sm:gap-5 sm:px-10 md:gap-6 md:px-12"
+					className="scrollbar-hide flex gap-4 overflow-x-auto scroll-smooth pb-4 sm:gap-5 sm:px-10 md:gap-6 md:px-12"
 					style={{
 						scrollbarWidth: "none",
 						msOverflowStyle: "none",

@@ -70,14 +70,19 @@ export default function Header() {
 					>
 						Careers
 					</Link>
-					<Link 
+					<div className="flex items-center w-full bg-amber-400 gap-x-2">
+						<Link 
 						href="https://cal.com/osamajavaid/30min" 
 						target="_blank"
 						onClick={() => setIsOpen(false)}
-						className="mt-2 text-center rounded-xl bg-black px-4 py-3 text-lg font-medium text-white transition-opacity hover:opacity-90"
+						className="w-full text-center rounded-xl bg-black px-4 py-2 text-lg font-medium text-white transition-opacity hover:opacity-90"
 					>
 						Book a Call
 					</Link>
+					<Link href="https://wa.me/923159591822" target="_blank">
+						<Image src={"/icons/whatsapp.svg"} width={52} height={52} alt="whatsapp"/>
+					</Link>
+					</div>
 				</div>
 			)}
 
@@ -90,9 +95,9 @@ export default function Header() {
 					<span className="hidden sm:inline">Free Product Consultation</span>
 					<span className="sm:hidden">Book Call</span>
 				</Link>
-				{/* <Link href="https://wa.me/923172404444" target="_blank">
+				<Link href="https://wa.me/923159591822" target="_blank">
 				<Image src={"/icons/whatsapp.svg"} width={42} height={42} alt="whatsapp"/>
-			</Link> */}
+			</Link>
 			</aside>
 		</header>
 	);

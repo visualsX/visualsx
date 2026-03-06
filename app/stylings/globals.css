@@ -127,7 +127,7 @@ body {
     @apply bg-[#fff8ef] text-foreground;
   }
   .section-heading{
-    @apply text-[32px] font-bold leading-[48px] sm:text-[36px] sm:leading-[56px] md:text-[42px] md:leading-[60px] text-gray-900;
+    @apply text-[28px] font-bold leading-[48px] sm:text-[36px] sm:leading-[56px] md:text-[42px] md:leading-[60px] text-gray-900;
   }
 }
 

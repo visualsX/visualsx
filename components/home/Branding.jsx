@@ -21,7 +21,7 @@ export default function Branding() {
 		color: "transparent",
 	};
 	return (
-		<div className="flex w-full flex-col items-center justify-center gap-12 px-4 sm:gap-16 md:gap-20">
+		<div className="flex w-full flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20">
 			<SectionHeader
 				badgeTitle={"Services"}
 				title={"Apps, Websites & Branding"}
@@ -44,7 +44,7 @@ export default function Branding() {
 							src={"/branding.webp"}
 						/>
 					</div>
-					<div className="flex flex-col items-start gap-3 sm:gap-4">
+					<div className="flex flex-col items-start gap-3 sm:gap-4 relative z-10">
 						<h3 className="text-[20px] font-bold sm:text-[22px] md:text-[24px]">Branding & Identity</h3>
 						<p className="text-[14px] font-normal sm:text-[16px] md:text-[18px]">
 							We help you stand out from the competition with a unique brand
@@ -68,7 +68,7 @@ export default function Branding() {
 							src={'/development.webp'}
 						/>
 					</div>
-					<div className="flex flex-col items-start gap-3 sm:gap-4">
+					<div className="flex flex-col items-start gap-3 sm:gap-4 relative z-10">
 						<h3 className="text-[20px] font-bold sm:text-[22px] md:text-[24px]">UI/UX Design</h3>
 						<p className="text-[14px] font-normal sm:text-[16px] md:text-[18px]">
 							We create websites that look great on any device and boost your
@@ -92,7 +92,7 @@ export default function Branding() {
 							src={"/uiux.webp"}
 						/>
 					</div>
-					<div className="flex flex-col items-start gap-3 sm:gap-4">
+					<div className="flex flex-col items-start gap-3 sm:gap-4 relative z-10">
 						<h3 className="text-[20px] font-bold sm:text-[22px] md:text-[24px]">MVP Development</h3>
 						<p className="text-[14px] font-normal sm:text-[16px] md:text-[18px]">
 							We build apps that are scalable, secure, and easy to use. Ready to

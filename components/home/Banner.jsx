@@ -4,9 +4,9 @@ import React from "react";
 
 export default function Banner() {
 	return (
-		<div className="mt-16 w-full space-y-12 px-4 sm:mt-24 sm:space-y-16 sm:px-6 md:space-y-20 lg:space-y-40">
+		<div className="md:mt-16 w-full space-y-12 px-4 sm:mt-24 sm:space-y-16 sm:px-6 md:space-y-20 lg:space-y-40">
 			<div className="relative z-50 my-auto flex flex-col items-center justify-center gap-4 sm:gap-5 md:gap-6">
-				<h1 className="max-w-5xl text-center text-[28px] font-bold leading-[40px] sm:text-4xl sm:leading-[50px] md:text-[50px] md:leading-[70px] lg:text-[70px]">
+				<h1 className="max-w-5xl text-center text-[32px] font-bold leading-[40px] sm:text-4xl sm:leading-[50px] md:text-[50px] md:leading-[70px] lg:text-[70px]">
 					<span className="text-[#f97316]">Build & Launch</span> Your Startup 70% Cheaper & 5x Faster
 				</h1>
 				<p className="max-w-3xl text-center text-sm font-normal sm:text-base md:text-xl">

@@ -40,7 +40,7 @@ export default function RecentProjects() {
 	];
 
 	return (
-		<div id="recentProjects" className="flex w-full flex-col items-center justify-center gap-12 px-4 sm:gap-16 md:gap-20">
+		<div id="recentProjects" className="flex w-full flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20">
 			<SectionHeader
 				badgeTitle={"Portfolio"}
 				title={"Recent Projects"}

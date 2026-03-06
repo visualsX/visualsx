@@ -24,7 +24,7 @@ export default function PortfolioPage() {
                 </div>
             </div>
 
-            <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-[80px] px-4 sm:gap-[100px] md:gap-[200px]">
+            <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-[80px] sm:gap-[100px] md:gap-[200px]">
                 <RecentProjects />
                 <Testimonials />
                 <ReadyToLaunch />

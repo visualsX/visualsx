@@ -3,7 +3,7 @@ import SectionHeader from "../common/section-header";
 
 export default function HowWeWorks() {
 	return (
-		<div id="howWeWorks" className="w-full pt-32 space-y-12 px-4 sm:space-y-16 md:space-y-20">
+		<div id="howWeWorks" className="w-full md:pt-32 space-y-12 sm:space-y-16 md:space-y-20">
 			<SectionHeader
 				badgeTitle={"Process"}
 				title={"How we work with you"}

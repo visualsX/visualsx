@@ -62,12 +62,15 @@ export default function Footer() {
 					Copyright © {year} visualsX. All Rights Reserved.
 				</p>
 				<div className="flex items-center gap-4">
-					<a target="_blank" href="https://www.linkedin.com/company/visualsx">
+					<Link target="_blank" href="https://www.linkedin.com/company/visualsx">
 						<Image alt="linkedin" src={"/icons/linkedin.svg"} height={24} width={24} />
-					</a>
-					<a target="_blank" href="https://github.com/visualsx">
+					</Link>
+					<Link target="_blank" href="https://github.com/visualsx">
 						<Image alt="github" src={"/icons/github.svg"} height={24} width={24} />
-					</a>
+					</Link>
+					<Link href="https://wa.me/923159591822" target="_blank">
+						<Image className="grayscale" src={"/icons/whatsapp.svg"} width={24} height={24} alt="whatsapp"/>
+					</Link>
 				</div>
 			</div>
 		</footer>

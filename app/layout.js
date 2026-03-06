@@ -90,7 +90,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bricolage.className} antialiased pt-5 `}>
+      <body className={`${bricolage.className} antialiased pt-5  px-4 xl:px-0`}>
         <Header />
         <main className="py-12 sm:py-16 lg:py-20 selection:bg-[#f97316]/20">
           {children}

@@ -6,7 +6,7 @@ import SectionHeader from "../common/section-header";
 
 export default function FAQs() {
 	return (
-		<div className="flex w-full max-w-full flex-col items-center justify-center gap-12 px-4 sm:max-w-[750px] sm:gap-16 sm:px-0 md:gap-20">
+		<div className="flex w-full max-w-full flex-col items-center justify-center gap-12 sm:max-w-[750px] sm:gap-16 md:gap-20">
 			<SectionHeader
 			badgeTitle={"Faqs"}
 			title={"Frequently Asked Questions"}

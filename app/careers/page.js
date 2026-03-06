@@ -66,7 +66,7 @@ export default function CareersPage() {
                 </div>
             </div>
 
-            <div className="mx-auto mt-20 flex w-full max-w-6xl flex-col items-center justify-center gap-[60px] px-4 sm:gap-[80px] md:gap-[120px]">
+            <div className="mx-auto mt-20 flex w-full max-w-6xl flex-col items-center justify-center gap-[60px] sm:gap-[80px] md:gap-[120px]">
                 {/* Why visualsX */}
                 <div className="grid w-full gap-8 md:grid-cols-3">
                     {whyUs.map((item, i) => (

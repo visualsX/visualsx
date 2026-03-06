@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import LogoBadge from "../common/LogoBadge";
+import SectionHeader from "../common/section-header";
 
 export default function Testimonials() {
 	const scrollContainerRef = useRef(null);
@@ -18,7 +18,7 @@ export default function Testimonials() {
 			bgColor: "#e8f1ff",
 		},
 		{
-			name: "Imad Ahmad",
+			name: "Saud Ahmad",
 			role: "Founder @GardenHub",
 			image: "https://placehold.co/100x100/png",
 			content:
@@ -63,16 +63,11 @@ export default function Testimonials() {
 	return (
 		<div id="testimonials" className="flex w-full flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20">
 			{/* Header Section */}
-			<div className="flex max-w-2xl flex-col items-center justify-center gap-3 px-4 text-center sm:gap-4">
-				<LogoBadge title="Testimonials" />
-				<h1 className="text-[32px] font-bold leading-[48px] sm:text-[40px] sm:leading-[56px] md:text-[52px] md:leading-[60px]">
-					What Our Clients Say
-				</h1>
-				<p className="__className_7b1666 text-base font-normal leading-[24px] sm:text-lg sm:leading-[26px] md:text-xl">
-					Don't just take our word for it. Here's what founders and product leaders have to say about working with us.
-				</p>
-			</div>
-
+			<SectionHeader
+			badgeTitle={"Testimonials"}
+			title={"What Our Clients Say"}
+			description={"Don't just take our word for it. Here's what founders and product leaders have to say about working with us."}
+			/>
 			{/* Carousel Container */}
 			<div className="relative w-full">
 				{/* Left Arrow */}

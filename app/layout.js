@@ -1,6 +1,8 @@
 import { Bricolage_Grotesque } from "next/font/google";
 import "./stylings/globals.css";
 import "./stylings/buttons.css";
+import Header from "@/components/home/Header";
+import Footer from "@/components/home/Footer";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -88,8 +90,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bricolage.className} antialiased`}>
-        {children}
+      <body className={`${bricolage.className} antialiased pt-5 `}>
+        <Header />
+        <main className="py-12 sm:py-16 lg:py-20 selection:bg-[#f97316]/20">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

@@ -1,18 +1,14 @@
 import Image from "next/image";
-import LogoBadge from "../common/LogoBadge";
+import SectionHeader from "../common/section-header";
 
 export default function HowWeWorks() {
 	return (
 		<div id="howWeWorks" className="w-full space-y-12 px-4 sm:space-y-16 md:space-y-20">
-			<div className="flex flex-col items-center justify-center gap-3 text-center sm:gap-4">
-				<LogoBadge title="Process" />
-				<h1 className="text-[32px] font-bold leading-[48px] sm:text-[40px] sm:leading-[56px] md:text-[52px] md:leading-[60px]">
-					How we work with you
-				</h1>
-				<p className="__className_7b1666 text-base font-normal leading-[24px] sm:text-lg sm:leading-[26px] md:text-xl">
-					Our process is designed to make your life easier.
-				</p>
-			</div>
+			<SectionHeader
+				badgeTitle={"Process"}
+				title={"How we work with you"}
+				description={"Our process is designed to make your life easier."}
+			/>
 			<div className="relative grid w-full gap-6 sm:gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
 				<div className="group relative flex min-h-[280px] w-full flex-col items-start justify-start gap-4 overflow-hidden rounded-[24px] bg-[#191919] p-6 sm:min-h-[300px] sm:rounded-[28px] sm:p-7 md:rounded-[30px] md:p-8">
 					{/* Sparkles */}

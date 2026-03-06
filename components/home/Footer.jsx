@@ -6,8 +6,8 @@ export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="w-full">
-			<div className="flex w-full flex-col items-start gap-6 px-4 sm:gap-8 md:gap-10">
+		<footer className="w-full max-w-7xl mx-auto pt-20">
+			<div className="flex w-full flex-col items-start gap-6 px-4 pb-4 sm:gap-8 md:gap-10">
 				{/* Heading */}
 				<h2 className="max-w-2xl text-[28px] font-bold sm:text-3xl md:text-4xl">
 					Chat with us to kickstart your Idea
@@ -21,14 +21,14 @@ export default function Footer() {
 							alt="Osama"
 							width={70}
 							height={70}
-							className="h-[70px] w-[70px] rounded-lg border border-gray-500 bg-contain object-contain sm:h-[85px] sm:w-[85px] md:h-[100px] md:w-[100px]"
+							className="h-[70px] w-[70px] grayscale hover:grayscale-0 rounded-lg border border-gray-500 bg-contain object-contain sm:h-[85px] sm:w-[85px] md:h-[100px] md:w-[100px]"
 						/>
 						<Image
 							src="/founders/abd.jpeg"
 							alt="Abdullah"
 							width={70}
 							height={70}
-							className="h-[70px] w-[70px] rounded-lg border border-gray-500 bg-contain object-contain sm:h-[85px] sm:w-[85px] md:h-[100px] md:w-[100px]"
+							className="h-[70px] w-[70px] grayscale hover:grayscale-0 rounded-lg border border-gray-500 bg-contain object-contain sm:h-[85px] sm:w-[85px] md:h-[100px] md:w-[100px]"
 						/>
 					</div>
 
@@ -57,18 +57,16 @@ export default function Footer() {
 				</div>
 			</div>
 
-			<div className="mt-0 flex w-full flex-col items-center justify-center gap-3 border-t border-black/10 pt-2">
+			<div className="flex w-full flex-col items-center justify-center gap-3 border-t border-black/10 py-4">
 				<p className="text-md font-normal">
 					Copyright © {year} visualsX. All Rights Reserved.
 				</p>
 				<div className="flex items-center gap-4">
 					<a target="_blank" href="https://www.linkedin.com/company/visualsx">
-						<Image alt="github" src={"/icons/github.svg"} height={24} width={24} />
-						{/* <Linkedin className="h-6 w-6" /> */}
+						<Image alt="linkedin" src={"/icons/linkedin.svg"} height={24} width={24} />
 					</a>
 					<a target="_blank" href="https://github.com/visualsx">
-						<Image alt="linkedin" src={"/icons/linkedin.svg"} height={24} width={24} />
-						{/* <Github className="h-6 w-6" /> */}
+						<Image alt="github" src={"/icons/github.svg"} height={24} width={24} />
 					</a>
 				</div>
 			</div>

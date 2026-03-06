@@ -4,7 +4,7 @@ export default function SparklingButton({ name = "", href = "#" }) {
     return (
         <Link
             href={href}
-            className="relative overflow-hidden px-5 py-2.5 rounded-full hover:border hover:border-white text-white font-semibold transition-all duration-300 bg-black/20 hover:bg-[#f97316] group  hover:shadow-[0_0_35px_#f97316] transform-gpu hover:scale-105 will-change-transform"
+            className="relative overflow-hidden px-2 py-px rounded-md text-primary hover:text-white font-semibold transition-all duration-300 hover:bg-[#f97316] group  hover:shadow-[0_0_35px_#f97316] transform-gpu hover:scale-105 will-change-transform"
         >
             <span className="relative z-10 text-sm font-semibold">{name}</span>
 

@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import React from "react";
 import LogoBadge from "../common/LogoBadge";
+import SectionHeader from "../common/section-header";
 
 export default function Branding() {
 	const style = {
@@ -21,15 +22,11 @@ export default function Branding() {
 	};
 	return (
 		<div className="flex w-full flex-col items-center justify-center gap-12 px-4 sm:gap-16 md:gap-20">
-			<div className="flex flex-col items-center justify-center gap-3 text-center sm:gap-4">
-				<LogoBadge title="Services" />
-				<h1 className="text-[32px] font-bold leading-[48px] sm:text-[40px] sm:leading-[56px] md:text-[52px] md:leading-[60px]">
-					Apps, Websites & Branding
-				</h1>
-				<p className="__className_7b1666 text-base font-normal leading-[24px] sm:text-lg sm:leading-[26px] md:text-xl">
-					Get everything you need in one place
-				</p>
-			</div>
+			<SectionHeader
+				badgeTitle={"Services"}
+				title={"Apps, Websites & Branding"}
+				description={"Get everything you need in one place"}
+			/>
 			<div className="relative grid w-full gap-6 sm:gap-8 md:gap-10 lg:grid-cols-3">
 				<div
 					className="flex min-h-[280px] w-full transform flex-col items-start justify-start gap-6 rounded-[24px] p-6 sm:min-h-[300px] sm:gap-8 sm:rounded-[28px] sm:p-7 md:gap-10 md:rounded-[30px] md:p-8 lg:translate-y-5 lg:-rotate-6"

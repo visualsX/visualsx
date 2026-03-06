@@ -1,18 +1,15 @@
 import Image from "next/image";
 import LogoBadge from "../common/LogoBadge";
+import SectionHeader from "../common/section-header";
 
 export default function WhyWorkWithUs() {
 	return (
 		<div className="flex w-full flex-col items-center justify-center gap-12 px-4 sm:gap-16 md:gap-20">
-			<div className="flex max-w-2xl flex-col items-center justify-center gap-3 text-center sm:gap-4">
-				<LogoBadge title="Features" />
-				<h1 className="text-[32px] font-bold leading-[48px] sm:text-[40px] sm:leading-[56px] md:text-[52px] md:leading-[60px]">
-					Here is why you'll love working with us
-				</h1>
-				<p className="__className_7b1666 text-base font-normal leading-[24px] sm:text-lg sm:leading-[26px] md:text-xl">
-					We provide everything you need to grow your business.
-				</p>
-			</div>
+			<SectionHeader
+			badgeTitle={"Features"}
+			title="Here is why you'll love working with us"
+			description={"We provide everything you need to grow your business."}
+			/>
 			<div className="relative grid w-full place-items-center gap-12 sm:gap-14 md:grid-cols-2 md:gap-16 lg:grid-cols-3">
 				<div className="flex w-full flex-col items-center justify-center gap-6 text-center sm:gap-8 md:gap-10">
 					<div className="flex h-[70px] w-[70px] items-center justify-center overflow-hidden rounded-full bg-black sm:h-[85px] sm:w-[85px] md:h-[100px] md:w-[100px]">

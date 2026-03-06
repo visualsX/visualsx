@@ -1,26 +1,18 @@
 "use client";
-// import Logo from "/public/logo/logo.svg";
-
 import React from "react";
 
-import Image from "next/image";
-import FAQ from "../FAQ";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
-import LogoBadge from "../common/LogoBadge";
+import SectionHeader from "../common/section-header";
 
 export default function FAQs() {
 	return (
 		<div className="flex w-full max-w-full flex-col items-center justify-center gap-12 px-4 sm:max-w-[750px] sm:gap-16 sm:px-0 md:gap-20">
-
-			<div className="flex flex-col items-center justify-center gap-3 text-center sm:gap-4">
-				<LogoBadge title="Faqs" />
-				<h1 className="text-[32px] font-bold leading-[48px] sm:text-[40px] sm:leading-[56px] md:text-[52px] md:leading-[60px]">
-					Frequently Asked Questions
-				</h1>
-				<p className="__className_7b1666 text-base font-normal leading-[24px] sm:text-lg sm:leading-[26px] md:text-xl">
-					Here are some of the most common questions we get asked.
-				</p>
-			</div>
+			<SectionHeader
+			badgeTitle={"Faqs"}
+			title={"Frequently Asked Questions"}
+			description={"Here are some of the most common questions we get asked."}
+			/>
+			
 			<Accordion
 				type="single"
 				collapsible

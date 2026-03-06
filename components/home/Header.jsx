@@ -14,26 +14,28 @@ export default function Header() {
 	};
 
 	return (
-		<header className="relative mx-auto flex h-16 min-w-[300px] max-w-7xl items-center gap-x-2 rounded-full bg-black/10 px-3 sm:h-18 sm:gap-x-3 sm:px-4 md:h-20 md:gap-x-4">
+		<header className="relative mx-auto flex h-16 min-w-[300px] max-w-6xl items-center gap-x-2 rounded-lg bg-black/5 px-3 sm:h-18 sm:gap-x-3 sm:px-4 md:h-20 md:gap-x-4">
 			<a href="/" className="z-50">
 				<div className="group flex items-center justify-center gap-2 font-bold text-lg sm:text-xl md:text-2xl">
-					<div className="rounded-full bg-black/20 p-2 sm:p-2.5">
+					<div className="flex items-center gap-x-1">
 						<Image 
-							className="h-[18px] w-[18px] transform transition duration-300 ease-in-out group-hover:rotate-180 sm:h-[20px] sm:w-[20px] md:h-[22px] md:w-[22px]" 
+							className="h-[18px] w-[18px] transform transition duration-300 ease-in-out group-hover:rotate-180 sm:h-[20px] sm:w-[20px] md:h-[32px] md:w-[32px]" 
 							alt="logo" 
-							src={"/logo/white-logo.svg"} 
+							src={"/logo/logo.svg"} 
 							width={22} 
 							height={22}
 						/>
+						<span>visualsX.</span>
 					</div>
 				</div>
 			</a>
 
 			{/* Desktop Navigation */}
 			<nav className="hidden items-center gap-x-1.5 md:flex md:gap-x-2">
-				<SparklingButton name="How We Work?" href="#howWeWorks" />
-				<SparklingButton name="Recent Projects" href="#recentProjects" />
-				<SparklingButton name="Testimonials" href="#testimonials" />
+				<SparklingButton name="Services" href="/services" />
+				<SparklingButton name="Portfolio" href="/portfolio" />
+				<SparklingButton name="Careers" href="/careers" />
+				<SparklingButton name="How It Works" href="/#howWeWorks" />
 			</nav>
 
 			{/* Mobile Menu Button */}
@@ -49,25 +51,32 @@ export default function Header() {
 			{isOpen && (
 				<div className="absolute left-0 top-full z-[99999] mt-2 flex w-full flex-col gap-2 rounded-[2rem] bg-white p-4 shadow-xl ring-1 ring-black/5 md:hidden">
 					<Link 
-						href="#howWeWorks"
+						href="/services"
 						onClick={() => setIsOpen(false)}
 						className="rounded-xl px-4 py-3 text-lg font-medium text-gray-800 transition-colors hover:bg-gray-50"
 					>
-						How We Work?
+						Services
 					</Link>
 					<Link 
-						href="#recentProjects"
+						href="/portfolio"
 						onClick={() => setIsOpen(false)}
-						className="text-3xl font-bold tracking-tight text-gray-900 transition-colors hover:text-[#f97316]"
+						className="rounded-xl px-4 py-3 text-lg font-medium text-gray-800 transition-colors hover:bg-gray-50"
 					>
-						Recent Projects
+						Portfolio
 					</Link>
 					<Link 
-						href="#testimonials"
+						href="/careers"
 						onClick={() => setIsOpen(false)}
-						className="text-3xl font-bold tracking-tight text-gray-900 transition-colors hover:text-[#f97316]"
+						className="rounded-xl px-4 py-3 text-lg font-medium text-gray-800 transition-colors hover:bg-gray-50"
 					>
-						Testimonials
+						Careers
+					</Link>
+					<Link 
+						href="/#howWeWorks"
+						onClick={() => setIsOpen(false)}
+						className="rounded-xl px-4 py-3 text-lg font-medium text-gray-800 transition-colors hover:bg-gray-50"
+					>
+						How It Works
 					</Link>
 					<Link 
 						href="https://cal.com/osamajavaid/30min" 

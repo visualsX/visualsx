@@ -1,10 +1,8 @@
-import Header from "@/components/home/Header";
-import Footer from "@/components/home/Footer";
 import LogoBadge from "@/components/common/LogoBadge";
 import { Zap, Lightbulb, Globe } from "lucide-react";
 
 export const metadata = {
-    title: "Careers | visualsX",
+    title: "Careers",
     description: "Join our team of designers, developers, and product experts. Build the future of digital products with us.",
 };
 

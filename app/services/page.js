@@ -1,5 +1,4 @@
 import ServicesHero from "@/components/services/ServicesHero";
-import SuccessStats from "@/components/services/SuccessStats";
 import TransformationBanner from "@/components/services/TransformationBanner";
 import ServicesTabs from "@/components/services/ServicesTabs";
 import {
@@ -9,7 +8,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-    title: "Services | visualsX",
+    title: "Services",
     description: "Explore our range of services including Branding, UI/UX Design, and MVP Development tailored for startups.",
 };
 

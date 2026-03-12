@@ -1,11 +1,9 @@
-import Header from "@/components/home/Header";
-import Footer from "@/components/home/Footer";
 import RecentProjects from "@/components/home/RecentProjects";
 import ReadyToLaunch from "@/components/home/ReadyToLaunch";
 import Testimonials from "@/components/home/Testimonials";
 
 export const metadata = {
-    title: "Portfolio | visualsX",
+    title: "Portfolio",
     description: "Check out our latest projects and success stories. We've helped startups launch MVPs across various industries.",
 };
 

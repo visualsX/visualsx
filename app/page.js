@@ -1,12 +1,10 @@
 import Banner from "@/components/home/Banner";
 import Branding from "@/components/home/Branding";
 import FAQs from "@/components/home/FAQs";
-import Footer from "@/components/home/Footer";
-import Header from "@/components/home/Header";
 import HowWeWorks from "@/components/home/HowWeWorks";
 import ReadyToLaunch from "@/components/home/ReadyToLaunch";
-import RecentProjects from "@/components/home/RecentProjects";
-import Testimonials from "@/components/home/Testimonials";
+// import RecentProjects from "@/components/home/RecentProjects";
+// import Testimonials from "@/components/home/Testimonials";
 import WhyWorkWithUs from "@/components/home/WhyWorkWithUs";
 import ServiceSection from "@/components/services/ServiceSection";
 import { Figma, Code, Smartphone, Users, ClipboardCheck, Cpu, Share2 } from "lucide-react";
@@ -35,7 +33,7 @@ export default function Home() {
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-234-567-8901',
+      telephone: '+923159591822',
       contactType: 'customer service',
       availableLanguage: 'English'
     },

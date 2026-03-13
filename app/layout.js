@@ -3,6 +3,7 @@ import "./stylings/globals.css";
 import "./stylings/buttons.css";
 import Header from "@/components/home/Header";
 import Footer from "@/components/home/Footer";
+import Script from "next/script";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -90,6 +91,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-WHF5L5HVJF`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WHF5L5HVJF');
+          `}
+        </Script>
+      </head>
       <body className={`${bricolage.className} antialiased pt-5  px-4 xl:px-0`}>
         <Header />
         <main className="py-12 sm:py-16 lg:py-20 selection:bg-[#f97316]/20">

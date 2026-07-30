@@ -14,7 +14,7 @@ export default function Header() {
 	};
 
 	return (
-		<header className="sticky top-5 z-[100] mx-auto flex h-16 min-w-[300px] max-w-7xl items-center gap-x-2 rounded-2xl bg-white/60 px-3 backdrop-blur-sm ring-1 ring-black/5 sm:h-18 sm:gap-x-3 sm:px-4 md:h-20 md:gap-x-4">
+		<header className="sticky top-5 z-[100] mx-auto flex h-16 min-w-[300px] max-w-lg items-center justify-between gap-x-2 rounded-2xl bg-white/60 px-3 backdrop-blur-sm ring-1 ring-black/5 sm:h-18 sm:gap-x-3 sm:px-4 md:h-20 md:gap-x-4">
 			<Link href="/" className="z-50">
 				<div className="group flex items-center justify-center gap-2 font-bold text-lg sm:text-xl md:text-2xl">
 					<div className="flex items-center gap-x-1">
@@ -70,7 +70,7 @@ export default function Header() {
 					>
 						Careers
 					</Link>
-					<div className="flex items-center w-full gap-x-2">
+					{/* <div className="flex items-center w-full gap-x-2">
 						<Link 
 						href="https://cal.com/osamajavaid/30min" 
 						target="_blank"
@@ -82,11 +82,11 @@ export default function Header() {
 					<Link href="https://wa.me/923159591822" target="_blank">
 						<Image src={"/icons/whatsapp.svg"} width={52} height={52} alt="whatsapp"/>
 					</Link>
-					</div>
+					</div> */}
 				</div>
 			)}
 
-			<aside className="ml-auto hidden md:flex items-center gap-x-2">
+			{/* <aside className="ml-auto hidden md:flex items-center gap-x-2">
 				<Link 
 					href="https://cal.com/osamajavaid/30min" 
 					target="_blank" 
@@ -98,7 +98,7 @@ export default function Header() {
 				<Link href="https://wa.me/923159591822" target="_blank">
 				<Image src={"/icons/whatsapp.svg"} width={42} height={42} alt="whatsapp"/>
 			</Link>
-			</aside>
+			</aside> */}
 		</header>
 	);
 }

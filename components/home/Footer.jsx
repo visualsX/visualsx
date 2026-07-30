@@ -1,19 +1,17 @@
+import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import ScrollToTop from "./ScrollToTop";
 
 export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
 		<footer className="w-full max-w-7xl mx-auto pt-20">
-			<div className="flex w-full flex-col items-start gap-6 px-4 pb-4 sm:gap-8 md:gap-10">
-				{/* Heading */}
+			{/* <div className="flex w-full flex-col items-start gap-6 px-4 pb-4 sm:gap-8 md:gap-10">
 				<h2 className="max-w-2xl text-[28px] font-bold sm:text-3xl md:text-4xl">
 					Chat with us to kickstart your Idea
 				</h2>
 
-				{/* Founders Section */}
 				<div className="flex flex-wrap items-center justify-start gap-6 sm:gap-8">
 					<div className="flex items-center gap-3">
 						<Image
@@ -38,7 +36,6 @@ export default function Footer() {
 					</div>
 				</div>
 
-				{/* Buttons */}
 				<div className="flex w-full flex-col items-center justify-between gap-3 sm:flex-row sm:gap-2">
 					<Link href="https://cal.com/osamajavaid/30min" target="_blank" className="w-full sm:w-auto">
 						<button className="flex h-10 w-full items-center justify-center gap-2 rounded-full bg-black px-5 py-4 text-sm font-medium text-white shadow transition-colors hover:bg-black/80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 sm:w-auto">
@@ -55,7 +52,7 @@ export default function Footer() {
 
 					<ScrollToTop />
 				</div>
-			</div>
+			</div> */}
 
 			<div className="flex w-full flex-col items-center justify-center gap-3 border-t border-black/10 py-4">
 				<p className="text-md font-normal">
@@ -68,8 +65,8 @@ export default function Footer() {
 					<Link target="_blank" href="https://github.com/visualsx">
 						<Image alt="github" src={"/icons/github.svg"} height={24} width={24} />
 					</Link>
-					<Link href="https://wa.me/923159591822" target="_blank">
-						<Image className="grayscale" src={"/icons/whatsapp.svg"} width={24} height={24} alt="whatsapp"/>
+					<Link href="mailto:visualsx.ltd@gmail.com" target="_blank">
+						<Mail className="text-gray-500"/>
 					</Link>
 				</div>
 			</div>

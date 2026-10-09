@@ -1,70 +1,60 @@
 import { Bricolage_Grotesque } from "next/font/google";
-import "./stylings/globals.css";
-import "./stylings/buttons.css";
-import Header from "@/components/home/Header";
-import Footer from "@/components/home/Footer";
 import Script from "next/script";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import { site } from "@/lib/site";
+import "./stylings/globals.css";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-bricolage",
 });
 
+const GA_ID = "G-NHJMXE9Q05";
+
 export const viewport = {
-  themeColor: "#111111", // Matching the dark theme
+  themeColor: "#fbf7f1",
 };
 
 export const metadata = {
+  metadataBase: new URL(site.url),
   title: {
-    default: "visualsX – Vision into Reality",
-    template: "%s | visualsX"
+    default: "visualsX | MVP development for founders",
+    template: "%s | visualsX",
   },
-  description:
-    "Launch your MVP in just 30 days with visualsX. We provide high-performance branding, website development, and mobile app solutions for startups and enterprises.",
+  description: site.description,
   keywords: [
     "MVP development",
-    "branding agency",
-    "website development",
+    "product studio",
+    "startup app development",
+    "web app development",
     "mobile app development",
     "UI/UX design",
-    "startup implementation",
-    "Next.js developers",
-    "React Native",
-    "digital transformation",
+    "AI development",
+    "branding agency",
+    "dedicated development team",
     "visualsX",
   ],
-  metadataBase: new URL("https://www.visualsx.io/"),
-  authors: [{ name: "visualsX Team" }],
+  authors: [{ name: "visualsX" }],
   creator: "visualsX",
   publisher: "visualsX",
   category: "technology",
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "visualsX – Launch your MVP in 30 Days",
-    description:
-      "We act as your technical co-founder, transforming your ideas into market-ready products with stunning branding and robust code.",
-    url: "https://www.visualsx.io/",
-    siteName: "visualsX",
-    images: [
-      {
-        url: "/visualsx-intro.png",
-        width: 1200,
-        height: 630,
-        alt: "visualsX – Vision into Reality",
-      },
-    ],
+    title: "visualsX | Your idea, live in 30 days",
+    description: site.description,
+    url: site.url,
+    siteName: site.name,
+    images: [{ url: "/visualsx-intro.png", width: 1200, height: 630, alt: "visualsX" }],
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "visualsX – Vision into Reality",
-    description:
-      "Launch your MVP in just 30 days. Professional branding, web, and mobile app development.",
+    title: "visualsX | Your idea, live in 30 days",
+    description: site.description,
     images: ["/visualsx-intro.png"],
-    creator: "@visualsx",
   },
   icons: {
     icon: "/favicon.ico",
@@ -88,30 +78,38 @@ export const metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: site.name,
+  url: site.url,
+  logo: `${site.url}/logo/logo-512x512.png`,
+  email: site.email,
+  description: site.description,
+  sameAs: [site.socials.linkedin, site.socials.github],
+};
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-NHJMXE9Q05`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-NHJMXE9Q05');
-          `}
-        </Script>
-      </head>
-      <body className={`${bricolage.className} antialiased pt-5  px-4 xl:px-0`}>
+    <html lang="en" className={bricolage.variable} data-scroll-behavior="smooth">
+      <body>
+        <a
+          href="#content"
+          className="sr-only z-[60] rounded-full bg-ink px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-4 focus:left-4"
+        >
+          Skip to content
+        </a>
         <Header />
-        <main className="py-12 sm:py-16 lg:py-20 selection:bg-[#f97316]/20">
-          {children}
-        </main>
+        <main id="content">{children}</main>
         <Footer />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
       </body>
     </html>
   );

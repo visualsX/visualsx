@@ -1,7 +1,6 @@
 import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
 import PageHero from "@/components/sections/PageHero";
-import Highlights from "@/components/sections/Highlights";
 import CTA from "@/components/sections/CTA";
 import { founders, values } from "@/lib/site";
 
@@ -45,7 +44,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Highlights />
 
       <section className="container-x section-y">
         <SectionHeading eyebrow="What we believe" title="How we work" />

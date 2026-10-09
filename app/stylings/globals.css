@@ -187,14 +187,6 @@
       animation-timeline: view();
       animation-range: entry 0% cover 40%;
     }
-    .ring-scope {
-      view-timeline-name: --ring-scope;
-    }
-    .reveal-ring {
-      animation: reveal-ring linear both;
-      animation-timeline: --ring-scope;
-      animation-range: entry 0% cover 40%;
-    }
   }
 }
 
@@ -204,15 +196,6 @@
   }
   to {
     clip-path: inset(0 0 0 0);
-  }
-}
-
-@keyframes reveal-ring {
-  from {
-    stroke-dashoffset: var(--ring);
-  }
-  to {
-    stroke-dashoffset: 0;
   }
 }
 

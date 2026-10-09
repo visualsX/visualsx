@@ -1,0 +1,39 @@
+<svg id="div.container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.984" height="42" viewBox="0 0 80.984 42">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.007" y1="0.594" x2="0" y2="0.594" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#40c9ff"/>
+      <stop offset="1" stop-color="#4e47dd"/>
+    </linearGradient>
+  </defs>
+  <g id="div.header_wrapper" transform="translate(-35 -28.614)">
+    <g id="Group_10" data-name="Group 10" transform="translate(33.247)">
+      <g id="Group_7" data-name="Group 7" transform="translate(0 28.5)">
+        <g id="Group_6" data-name="Group 6">
+          <g id="Group_5" data-name="Group 5">
+            <g id="Group_4" data-name="Group 4">
+              <g id="Group_3" data-name="Group 3">
+                <g id="Union">
+                  <path id="Union_1" data-name="Union 1" d="M-2128.413-31.295V-53.5h7.4v22.2Zm-19.595-22.2h7.864l5.958,9.872,4.685-8.032v11.178l-5.338,9.186Zm-.017,22.2V-51.442l6.911,11.6v8.551Zm-10.977,0V-53.5h7.4v22.2ZM-2178.6-53.5h7.865l5.957,9.872,4.686-8.032v11.178l-5.338,9.186Zm-.016,22.2V-51.442l6.91,11.6v8.551Zm-10.944,0V-48.664h-10.208V-53.5h17.6v17.771l-4.434,4.434Zm-7.992,0L-2202-35.729V-40.6h7.68v4.869h4.05v4.434Z" transform="translate(2203.753 53.614)" fill="url(#linear-gradient)"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Group_9" data-name="Group 9" transform="translate(0 28.5)">
+        <path id="Vector" d="M2.986,0c2,0,2.948,1.3,2.948,3.307v.359h-1.4V3.231c0-1.19-.454-1.89-1.512-1.89s-1.512.7-1.512,1.871c0,2.967,4.441,3.25,4.441,6.973,0,2-.964,3.307-2.986,3.307S0,12.188,0,10.185V9.429H1.379v.831c0,1.19.491,1.89,1.55,1.89s1.55-.7,1.55-1.89C4.479,7.313.057,7.03.057,3.307.057,1.266,1,0,2.986,0Z" transform="translate(76.483 28.622)" fill="#14110f"/>
+        <path id="Vector-2" data-name="Vector" d="M1.474,5.858H4.705V7.181H1.474v4.705H5.442v1.342H0V0H5.442V1.342H1.474Z" transform="translate(69.882 28.754)" fill="#14110f"/>
+        <path id="Vector-3" data-name="Vector" d="M0,0H1.474V13.228H0Z" transform="translate(66.892 28.754)" fill="#14110f"/>
+        <path id="Vector-4" data-name="Vector" d="M2.967,0C5.008,0,5.952,1.323,5.952,3.326V4.46h-1.4V3.25c0-1.19-.472-1.909-1.55-1.909-1.058,0-1.55.718-1.55,1.909v6.992c0,1.19.491,1.909,1.55,1.909,1.077,0,1.55-.718,1.55-1.909V7.6H3.194V6.274H5.952v3.893c0,2-.945,3.326-2.986,3.326C.945,13.492,0,12.169,0,10.166V3.326C0,1.323.945,0,2.967,0Z" transform="translate(59.545 28.622)" fill="#14110f"/>
+        <path id="Vector-5" data-name="Vector" d="M0,10.166V3.326C0,1.3,1,0,3.023,0,5.064,0,6.066,1.3,6.066,3.326v6.841c0,2-1,3.326-3.042,3.326C1,13.492,0,12.169,0,10.166ZM1.455,3.25v6.992c0,1.209.51,1.909,1.568,1.909,1.077,0,1.568-.7,1.568-1.909V3.25c0-1.19-.491-1.909-1.568-1.909-1.058,0-1.568.718-1.568,1.909Z" transform="translate(52.2 28.622)" fill="#14110f"/>
+        <path id="Vector-6" data-name="Vector" d="M5.253,13.228H0V0H1.474V11.886H5.253Z" transform="translate(45.947 28.754)" fill="#14110f"/>
+        <path id="Vector-7" data-name="Vector" d="M0,10.166V3.326C0,1.3,1,0,3.023,0,5.064,0,6.066,1.3,6.066,3.326v6.841c0,2-1,3.326-3.042,3.326C1,13.492,0,12.169,0,10.166ZM1.455,3.25v6.992c0,1.209.51,1.909,1.568,1.909,1.077,0,1.568-.7,1.568-1.909V3.25c0-1.19-.491-1.909-1.568-1.909-1.058,0-1.568.718-1.568,1.909Z" transform="translate(38.489 28.622)" fill="#14110f"/>
+        <path id="Vector-8" data-name="Vector" d="M1.323,2.532v10.7H0V0H1.871L4.932,9.562V0h1.3V13.228H4.705Z" transform="translate(30.851 28.754)" fill="#14110f"/>
+        <path id="Vector-9" data-name="Vector" d="M4.724,7.275H1.474v5.952H0V0H1.474V5.952h3.25V0H6.2V13.228H4.724Z" transform="translate(23.157 28.754)" fill="#14110f"/>
+        <path id="Vector-10" data-name="Vector" d="M2.967,0C5.008,0,5.952,1.323,5.952,3.326v1.19h-1.4V3.25c0-1.19-.472-1.909-1.55-1.909-1.058,0-1.55.718-1.55,1.909v6.992c0,1.19.491,1.909,1.55,1.909,1.077,0,1.55-.718,1.55-1.909V8.522h1.4v1.644c0,2-.945,3.326-2.986,3.326C.945,13.492,0,12.169,0,10.166V3.326C0,1.323.945,0,2.967,0Z" transform="translate(15.865 28.622)" fill="#14110f"/>
+        <path id="Vector-11" data-name="Vector" d="M1.474,5.858H4.705V7.181H1.474v4.705H5.442v1.342H0V0H5.442V1.342H1.474Z" transform="translate(9.168 28.754)" fill="#14110f"/>
+        <path id="Vector-12" data-name="Vector" d="M3.912,13.228H2.438V1.342H0V0H6.349V1.342H3.912Z" transform="translate(1.793 28.754)" fill="#14110f"/>
+      </g>
+    </g>
+  </g>
+</svg>

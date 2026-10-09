@@ -1,11 +1,11 @@
 {
-  "name": "visualsX – Apps, Websites & Branding",
+  "name": "visualsX",
   "short_name": "visualsX",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fff8ef",
-  "theme_color": "#fff8ef",
-  "description": "visualsX provides professional branding, website development, and mobile app solutions. We create, design, and deploy digital products that help businesses grow.",
+  "background_color": "#fbf7f1",
+  "theme_color": "#fbf7f1",
+  "description": "visualsX is a product studio for founders. We design, build and launch web and mobile MVPs in 30 days.",
   "icons": [
     {
       "src": "/logo/logo-192x192.png",

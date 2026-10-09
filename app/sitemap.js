@@ -12,6 +12,7 @@ const routes = [
 export default function sitemap() {
   return routes.map(({ path, priority }) => ({
     url: `${site.url}${path}`,
+    lastModified: new Date(),
     changeFrequency: "monthly",
     priority,
   }));

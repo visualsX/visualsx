@@ -3,17 +3,19 @@ import ServiceExplorer from "@/components/services/ServiceExplorer";
 import Process from "@/components/sections/Process";
 import Engagements from "@/components/sections/Engagements";
 import CTA from "@/components/sections/CTA";
+import { JsonLd, breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Services",
   description:
     "Product design, web and mobile app development, AI features, branding and dedicated teams for startups and growing businesses.",
-  alternates: { canonical: "/services" },
-};
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd("Services", "/services")} />
       <PageHero
         eyebrow="Services"
         title={

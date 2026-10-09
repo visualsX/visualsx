@@ -5,13 +5,14 @@ import PageHero from "@/components/sections/PageHero";
 import CTA from "@/components/sections/CTA";
 import { projects, story, values } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { JsonLd, breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "About",
+export const metadata = pageMetadata({
+  title: "About Us",
   description:
-    "About visualsX, a small product studio that helps founders design, build and launch their first product.",
-  alternates: { canonical: "/about" },
-};
+    "About visualsX, a small product studio that helps founders design, build and launch their MVP in about 30 days.",
+  path: "/about",
+});
 
 const valueIcons = { rocket: Rocket, chat: MessagesSquare, shield: ShieldCheck, target: Target };
 
@@ -38,6 +39,7 @@ function Step({ label, title, last = false, children }) {
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd("About Us", "/about")} />
       <PageHero
         eyebrow="About us"
         title={

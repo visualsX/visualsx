@@ -1,16 +1,19 @@
 import { Building2, Code2, Coffee, Home, Mic, PenTool, Plane, Rocket, ShieldCheck, Video } from "lucide-react";
 import SectionHeading, { Eyebrow } from "@/components/ui/SectionHeading";
 import { projects } from "@/lib/site";
+import { JsonLd, breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Careers",
-  description: "Careers at visualsX, a small remote product studio that designs and builds apps for founders.",
-  alternates: { canonical: "/careers" },
-};
+  description:
+    "Careers at visualsX, a small remote product studio that designs and builds web and mobile apps for founders.",
+  path: "/careers",
+});
 
 export default function CareersPage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd("Careers", "/careers")} />
       {/* Hero */}
       <section className="relative overflow-clip">
         <div

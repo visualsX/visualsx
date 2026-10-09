@@ -20,7 +20,7 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "visualsX | MVP development for founders",
+    default: "visualsX | MVP Development in 30 Days",
     template: "%s | visualsX",
   },
   description: site.description,
@@ -78,15 +78,31 @@ export const metadata = {
   },
 };
 
-const organizationJsonLd = {
+// Structured data: the WebSite entry tells search engines the site name shown above results;
+// the Organization entry links the brand, logo, contact details and social profiles.
+const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: site.name,
-  url: site.url,
-  logo: `${site.url}/logo/logo-512x512.png`,
-  email: site.email,
-  description: site.description,
-  sameAs: [site.socials.linkedin, site.socials.github],
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${site.url}/#website`,
+      name: site.name,
+      alternateName: ["visualsx", "visualsX Studio"],
+      url: site.url,
+      publisher: { "@id": `${site.url}/#organization` },
+    },
+    {
+      "@type": "Organization",
+      "@id": `${site.url}/#organization`,
+      name: site.name,
+      url: site.url,
+      logo: { "@type": "ImageObject", url: `${site.url}/logo/logo-512x512.png`, width: 512, height: 512 },
+      email: site.email,
+      description: site.description,
+      contactPoint: { "@type": "ContactPoint", contactType: "sales", email: site.email, availableLanguage: ["English"] },
+      sameAs: [site.socials.linkedin, site.socials.github],
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
@@ -102,7 +118,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main id="content">{children}</main>
         <Footer />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];

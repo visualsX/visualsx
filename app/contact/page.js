@@ -2,12 +2,14 @@ import { CalendarDays, Mail } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import ContactForm from "@/components/contact/ContactForm";
 import { site } from "@/lib/site";
+import { JsonLd, breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Contact",
-  description: "Tell us about your idea. Book a free 30-minute call or send a brief and we will get back to you quickly.",
-  alternates: { canonical: "/contact" },
-};
+export const metadata = pageMetadata({
+  title: "Contact Us",
+  description:
+    "Tell us about your idea. Book a free 30-minute call or send a brief to visualsX, and get a fixed-price proposal for your MVP.",
+  path: "/contact",
+});
 
 const nextSteps = [
   { title: "We get back to you", body: "With a few questions, or a time to talk." },
@@ -18,6 +20,7 @@ const nextSteps = [
 export default function ContactPage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd("Contact Us", "/contact")} />
       <PageHero
         eyebrow="Contact"
         title={

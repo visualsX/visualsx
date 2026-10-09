@@ -21,14 +21,14 @@ export default function SectionHeading({ eyebrow, title, description, align = "l
       {eyebrow && <Eyebrow tone={tone}>{eyebrow}</Eyebrow>}
       <Tag
         className={cn(
-          "text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl",
+          "text-3xl leading-[1.08] font-bold tracking-tight text-balance sm:text-[2.5rem]",
           tone === "dark" ? "text-white" : "text-foreground"
         )}
       >
         {title}
       </Tag>
       {description && (
-        <p className={cn("max-w-2xl text-lg text-pretty", tone === "dark" ? "text-white/65" : "text-muted")}>{description}</p>
+        <p className={cn("max-w-2xl text-base text-pretty sm:text-lg", tone === "dark" ? "text-white/65" : "text-muted")}>{description}</p>
       )}
     </div>
   );

@@ -28,7 +28,7 @@ function Step({ label, title, last = false, children }) {
         {label}
       </span>
       <div className="flex min-w-0 flex-col gap-4 pt-1.5 sm:pt-2.5">
-        <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">{title}</h3>
+        <h3 className="text-xl font-bold tracking-tight sm:text-2xl">{title}</h3>
         {children}
       </div>
     </li>
@@ -53,7 +53,7 @@ export default function AboutPage() {
           {/* Statement, pinned while the timeline scrolls */}
           <div className="flex flex-col gap-6 lg:sticky lg:top-28 lg:self-start">
             <Eyebrow>Why we started</Eyebrow>
-            <p className="text-3xl leading-[1.12] font-bold tracking-tight text-balance sm:text-4xl">{story.statement}</p>
+            <p className="text-2xl leading-[1.15] font-bold tracking-tight text-balance sm:text-3xl">{story.statement}</p>
           </div>
 
           <ol className="relative">
@@ -63,7 +63,7 @@ export default function AboutPage() {
             </div>
 
             <Step label="01" title="The problem">
-              <p className="text-lg text-muted">{story.body[0]}</p>
+              <p className="text-base text-muted sm:text-lg">{story.body[0]}</p>
             </Step>
 
             <Step label="02" title="What founders told us">
@@ -81,7 +81,7 @@ export default function AboutPage() {
             </Step>
 
             <Step label="03" title="What we built">
-              <p className="text-lg text-muted">{story.body[1]}</p>
+              <p className="text-base text-muted sm:text-lg">{story.body[1]}</p>
               <ul className="grid gap-2 sm:grid-cols-2">
                 {story.pairs.map((pair) => (
                   <li key={pair.after} className="flex items-center gap-3 rounded-2xl bg-ink px-4 py-3.5 text-sm font-medium text-white">
@@ -114,11 +114,11 @@ export default function AboutPage() {
             <Step label="05" title="Today" last>
               <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
                 <p>
-                  <span className="block text-5xl font-bold tracking-tight">{projects.length}</span>
+                  <span className="block text-4xl font-bold tracking-tight">{projects.length}</span>
                   <span className="text-muted">products shipped</span>
                 </p>
                 <p>
-                  <span className="block text-5xl font-bold tracking-tight">3</span>
+                  <span className="block text-4xl font-bold tracking-tight">3</span>
                   <span className="text-muted">client countries</span>
                 </p>
                 <Button href="/work" variant="outline" arrow className="sm:ml-auto">

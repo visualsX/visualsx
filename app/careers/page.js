@@ -1,4 +1,4 @@
-import { Code2, PenTool, Rocket, ShieldCheck } from "lucide-react";
+import { Building2, Code2, Coffee, Home, Mic, PenTool, Plane, Rocket, ShieldCheck, Video } from "lucide-react";
 import SectionHeading, { Eyebrow } from "@/components/ui/SectionHeading";
 import { projects } from "@/lib/site";
 
@@ -23,10 +23,10 @@ export default function CareersPage() {
         />
         <div className="container-x relative flex flex-col items-center gap-7 pt-14 pb-16 text-center sm:pt-24 sm:pb-20">
           <Eyebrow>Careers</Eyebrow>
-          <h1 className="max-w-4xl text-5xl leading-[0.98] font-bold tracking-tight text-balance sm:text-7xl">
+          <h1 className="max-w-4xl text-4xl leading-[1.04] font-bold tracking-tight text-balance sm:text-5xl lg:text-[3.5rem]">
             Build products <span className="text-primary">people actually use</span>
           </h1>
-          <p className="max-w-2xl text-lg text-pretty text-muted sm:text-xl">
+          <p className="max-w-2xl text-base text-pretty text-muted sm:text-lg">
             We&apos;re a small remote team of designers and developers building products for founders. If you like seeing your
             work go live, you&apos;ll enjoy it here.
           </p>
@@ -38,6 +38,49 @@ export default function CareersPage() {
         <SectionHeading eyebrow="Why you'll like it" title="What working here is like" />
 
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {/* Remote-first */}
+          <article className="flex flex-col gap-6 rounded-[28px] bg-surface p-6 ring-1 ring-line sm:p-8">
+            <div className="flex flex-col gap-2">
+              <h2 className="text-2xl font-bold">Remote-first</h2>
+              <p className="text-muted">We work remotely. Live wherever suits you.</p>
+            </div>
+            {/* A team call where everyone joins from a different place */}
+            <div aria-hidden className="mt-auto rounded-2xl bg-ink p-2">
+              <div className="grid grid-cols-2 gap-1.5">
+                {[
+                  { icon: Home, place: "Home" },
+                  { icon: Coffee, place: "Café" },
+                  { icon: Building2, place: "Cowork" },
+                  { icon: Plane, place: "Travelling" },
+                ].map(({ icon: Icon, place }, i) => (
+                  <div key={place} className="relative flex h-16 items-center justify-center rounded-xl bg-white/[0.07]">
+                    <span
+                      className={
+                        i === 0
+                          ? "flex size-8 items-center justify-center rounded-full bg-primary text-white ring-2 ring-primary/40"
+                          : "flex size-8 items-center justify-center rounded-full bg-white/10 text-white/80"
+                      }
+                    >
+                      <Icon className="size-4" />
+                    </span>
+                    <span className="absolute bottom-1 left-1.5 text-[10px] font-medium text-white/60">{place}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-2 flex items-center justify-center gap-2 pb-0.5">
+                <span className="flex size-6 items-center justify-center rounded-full bg-white/10 text-white/70">
+                  <Mic className="size-3" />
+                </span>
+                <span className="flex size-6 items-center justify-center rounded-full bg-white/10 text-white/70">
+                  <Video className="size-3" />
+                </span>
+                <span className="h-6 rounded-full bg-primary px-2.5 text-[10px] leading-6 font-semibold text-white">
+                  Team call
+                </span>
+              </div>
+            </div>
+          </article>
+
           {/* Launch real products */}
           <article className="flex flex-col gap-6 overflow-clip rounded-[28px] bg-primary-soft p-6 sm:p-8 lg:col-span-2">
             <div className="flex flex-col gap-2">
@@ -61,28 +104,13 @@ export default function CareersPage() {
                       {last && <Rocket className="size-3.5" />}
                       {stage}
                     </span>
-                    {!last && <span className="mx-1 hidden h-0.5 min-w-2 flex-1 rounded-full min-[400px]:block sm:mx-2 bg-gradient-to-r from-primary/30 to-primary" />}
+                    {!last && (
+                      <span className="mx-1 hidden h-0.5 min-w-2 flex-1 rounded-full min-[400px]:block sm:mx-2 bg-gradient-to-r from-primary/30 to-primary" />
+                    )}
                   </li>
                 );
               })}
             </ol>
-          </article>
-
-          {/* Remote-first */}
-          <article className="relative flex min-h-60 flex-col gap-2 overflow-clip rounded-[28px] bg-surface p-6 ring-1 ring-line sm:p-8">
-            <svg aria-hidden viewBox="0 0 200 200" className="absolute -right-12 -bottom-16 size-44 text-primary/30 sm:size-56">
-              {Array.from({ length: 11 }, (_, row) =>
-                Array.from({ length: 11 }, (_, col) => {
-                  const x = col * 18 + 10;
-                  const y = row * 18 + 10;
-                  const inside = (x - 100) ** 2 + (y - 100) ** 2 < 92 ** 2;
-                  return inside ? <circle key={`${row}-${col}`} cx={x} cy={y} r="3" fill="currentColor" /> : null;
-                }),
-              )}
-              <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" strokeWidth="1.5" />
-            </svg>
-            <h2 className="relative text-2xl font-bold">Remote-first</h2>
-            <p className="relative max-w-[14rem] text-muted">We work remotely. Live wherever suits you.</p>
           </article>
 
           {/* Different problems */}

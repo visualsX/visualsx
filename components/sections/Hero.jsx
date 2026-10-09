@@ -35,7 +35,7 @@ export default function Hero() {
             </span>
           </Link>
 
-          <h1 className="text-[clamp(2.4rem,11vw,5.75rem)] leading-[0.95] font-bold tracking-[-0.04em] lg:text-[clamp(3.5rem,5.6vw,5.5rem)]">
+          <h1 className="text-[clamp(2.25rem,10vw,4rem)] leading-[0.98] font-bold tracking-[-0.035em] lg:text-[clamp(3rem,4.6vw,4.25rem)]">
             {lines.map((line, i) => (
               <span key={line.text} className="-mb-[0.1em] block overflow-clip pb-[0.1em] whitespace-nowrap">
                 <span className="animate-rise block" style={{ animationDelay: `${120 + i * 110}ms` }}>
@@ -72,7 +72,7 @@ export default function Hero() {
             ))}
           </h1>
 
-          <p className="animate-fade-up max-w-lg text-lg text-pretty text-muted sm:text-xl" style={{ animationDelay: "450ms" }}>
+          <p className="animate-fade-up max-w-lg text-base text-pretty text-muted sm:text-lg" style={{ animationDelay: "450ms" }}>
             {site.description}
           </p>
 
@@ -226,7 +226,7 @@ function BuildScene() {
           </span>
           <span className="flex flex-col leading-tight">
             <span className="text-xs font-semibold">Demo call</span>
-            <span className="text-[10px] text-muted">Friday · 30 min</span>
+            <span className="text-[10px] text-muted">30 min · Video call</span>
           </span>
           <span className="ml-1 flex -space-x-2">
             {founders.map((f) => (

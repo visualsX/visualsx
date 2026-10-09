@@ -38,8 +38,8 @@ export default function CTA({
               <p className="text-sm font-semibold text-muted">You&apos;ll talk to a founder</p>
             </div>
 
-            <h2 className="text-4xl leading-[1.02] font-bold tracking-tight text-balance sm:text-6xl">{title}</h2>
-            <p className="max-w-xl text-lg text-muted">{description}</p>
+            <h2 className="text-3xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">{title}</h2>
+            <p className="max-w-xl text-base text-muted sm:text-lg">{description}</p>
 
             <ul className="flex flex-wrap gap-2">
               {talkingPoints.map((item) => (

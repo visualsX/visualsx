@@ -122,8 +122,8 @@ export default function ServiceExplorer() {
             {/* Copy */}
             <div className="flex min-w-0 flex-col gap-7 p-6 sm:p-8 lg:p-10">
               <div className="flex flex-col gap-3">
-                <h2 className="text-3xl leading-tight font-bold tracking-tight text-balance sm:text-4xl">{service.title}</h2>
-                <p className="text-lg text-pretty text-muted">{service.description}</p>
+                <h2 className="text-2xl leading-tight font-bold tracking-tight text-balance sm:text-3xl">{service.title}</h2>
+                <p className="text-base text-pretty text-muted sm:text-lg">{service.description}</p>
               </div>
 
               <div className="flex flex-col gap-3">

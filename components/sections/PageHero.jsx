@@ -7,8 +7,8 @@ export default function PageHero({ eyebrow, title, description, children }) {
       <div aria-hidden className="pointer-events-none absolute -top-48 left-1/2 size-[480px] -translate-x-1/2 rounded-full bg-primary/15 blur-[120px]" />
       <div className="container-x relative flex flex-col items-start gap-6 pt-12 pb-16 sm:pt-20 sm:pb-20">
         <Eyebrow>{eyebrow}</Eyebrow>
-        <h1 className="max-w-4xl text-5xl leading-[1] font-bold tracking-tight text-balance sm:text-6xl lg:text-7xl">{title}</h1>
-        {description && <p className="max-w-2xl text-lg text-pretty text-muted sm:text-xl">{description}</p>}
+        <h1 className="max-w-4xl text-4xl leading-[1.04] font-bold tracking-tight text-balance sm:text-5xl lg:text-[3.5rem]">{title}</h1>
+        {description && <p className="max-w-2xl text-base text-pretty text-muted sm:text-lg">{description}</p>}
         {children}
       </div>
     </section>

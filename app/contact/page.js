@@ -64,9 +64,13 @@ export default function ContactPage() {
               <h2 className="font-semibold">What happens next</h2>
               <ol className="mt-6 flex flex-col gap-6">
                 {nextSteps.map((step, i) => (
-                  <li key={step.title} className="flex gap-4">
-                    <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-ink">
-                      {i + 1}
+                  <li key={step.title} className="relative flex gap-4">
+                    {/* Thin connector to the next step */}
+                    {i < nextSteps.length - 1 && (
+                      <span aria-hidden className="absolute top-9 -bottom-5 left-4 w-px -translate-x-1/2 bg-line" />
+                    )}
+                    <span className="relative flex size-8 shrink-0 items-center justify-center rounded-full bg-primary-soft font-mono text-xs font-semibold text-primary-strong ring-1 ring-primary/20">
+                      {String(i + 1).padStart(2, "0")}
                     </span>
                     <span>
                       <span className="block font-semibold">{step.title}</span>

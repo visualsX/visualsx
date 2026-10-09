@@ -26,8 +26,8 @@ function DesignVisual() {
         </span>
       </div>
       <div className="absolute right-[18%] -bottom-3 flex items-center gap-1 transition-transform duration-500 group-hover:-translate-x-6 group-hover:-translate-y-4">
-        <MousePointer2 className="size-5 fill-ink text-ink" />
-        <span className="rounded-md bg-ink px-1.5 py-0.5 text-[10px] font-semibold text-white">You</span>
+        <MousePointer2 strokeWidth={1.75} className="size-5 fill-ink text-white drop-shadow-[0_1px_2px_rgb(20_17_15/0.35)]" />
+        <span className="rounded-md bg-ink px-1.5 py-0.5 text-[10px] font-semibold text-white ring-1 ring-white">You</span>
       </div>
     </div>
   );

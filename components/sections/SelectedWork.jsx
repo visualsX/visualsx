@@ -1,6 +1,6 @@
 import Button from "@/components/ui/Button";
 import SectionHeading from "@/components/ui/SectionHeading";
-import ProjectList from "@/components/sections/ProjectList";
+import ProjectGrid from "@/components/sections/ProjectGrid";
 import { projects } from "@/lib/site";
 
 export default function SelectedWork() {
@@ -18,7 +18,7 @@ export default function SelectedWork() {
       </div>
 
       <div className="mt-10">
-        <ProjectList projects={projects} />
+        <ProjectGrid projects={projects} />
       </div>
     </section>
   );

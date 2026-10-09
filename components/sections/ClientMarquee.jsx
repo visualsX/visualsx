@@ -1,18 +1,10 @@
 import Image from "next/image";
+import { logoSize } from "@/lib/logo";
 import { projects } from "@/lib/site";
-
-// Optical sizing: wide wordmarks get shorter, square marks taller, so every logo carries
-// roughly the same visual weight. width/height in the data are the file's intrinsic size.
-// `scale` nudges a logo whose file has extra padding or very thin strokes.
-function displaySize({ width, height, scale = 1 }) {
-  const ratio = width / height;
-  const h = Math.round(44 * Math.pow(ratio, -0.4) * scale);
-  return { width: Math.round(h * ratio), height: h };
-}
 
 function ClientLogo({ project, hidden }) {
   const { logo, name } = project;
-  const size = displaySize(logo);
+  const size = logoSize(logo);
   return (
     <span className="flex h-12 items-center opacity-80 transition-opacity duration-300 hover:opacity-100">
       <Image

@@ -150,7 +150,7 @@ function BrandVisual() {
   );
 }
 
-/* Dedicated team: a sprint board with tasks moving across */
+/* Dedicated team: a task board with work moving across */
 function TeamVisual() {
   const columns = [
     { title: "To do", items: ["bg-ink/10", "bg-ink/10"] },

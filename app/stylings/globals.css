@@ -187,6 +187,20 @@
       animation-timeline: view();
       animation-range: entry 0% cover 40%;
     }
+    .reveal-wipe-y {
+      animation: reveal-wipe-y linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 60%;
+    }
+  }
+}
+
+@keyframes reveal-wipe-y {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
   }
 }
 

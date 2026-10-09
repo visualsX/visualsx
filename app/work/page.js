@@ -1,5 +1,5 @@
 import PageHero from "@/components/sections/PageHero";
-import ProjectList from "@/components/sections/ProjectList";
+import ProjectGrid from "@/components/sections/ProjectGrid";
 import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 import { projects } from "@/lib/site";
@@ -25,7 +25,7 @@ export default function WorkPage() {
       />
 
       <section className="container-x pb-20 sm:pb-28">
-        <ProjectList projects={projects} />
+        <ProjectGrid projects={projects} />
       </section>
 
       <Testimonials />

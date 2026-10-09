@@ -5,10 +5,10 @@ import Button from "@/components/ui/Button";
 import { founders, projects, site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
+// Two lines on every screen; each line stays on one row and the size scales with width.
 const lines = [
   { text: "Your idea," },
-  { text: "live", accent: true, rest: " in" },
-  { text: "30 days." },
+  { text: "live", accent: true, rest: " in 30 days." },
 ];
 
 export default function Hero() {
@@ -35,9 +35,9 @@ export default function Hero() {
             </span>
           </Link>
 
-          <h1 className="text-[3.6rem] leading-[0.92] font-bold tracking-[-0.04em] min-[400px]:text-7xl sm:text-8xl xl:text-[7.25rem]">
+          <h1 className="text-[clamp(2.4rem,11vw,5.75rem)] leading-[0.95] font-bold tracking-[-0.04em] lg:text-[clamp(3.5rem,5.6vw,5.5rem)]">
             {lines.map((line, i) => (
-              <span key={line.text} className="-mb-[0.1em] block overflow-clip pb-[0.1em]">
+              <span key={line.text} className="-mb-[0.1em] block overflow-clip pb-[0.1em] whitespace-nowrap">
                 <span className="animate-rise block" style={{ animationDelay: `${120 + i * 110}ms` }}>
                   {line.accent ? (
                     <>
@@ -121,7 +121,7 @@ export default function Hero() {
   );
 }
 
-/* A product coming together: dashboard, phone, sprint progress, demo call and deploy notice */
+/* A product coming together: dashboard, phone, MVP progress, demo call and deploy notice */
 function BuildScene() {
   return (
     <div aria-hidden className="animate-fade-up relative mx-auto aspect-[1/1] w-full max-w-[560px] lg:mr-0" style={{ animationDelay: "350ms" }}>
@@ -199,14 +199,14 @@ function BuildScene() {
         </div>
       </Float>
 
-      {/* Sprint progress */}
+      {/* MVP progress */}
       <Float className="top-[3%] right-0 w-[52%] sm:w-[46%]" delay={1.2}>
         <div className="rotate-3 rounded-2xl bg-ink p-3 text-white shadow-2xl sm:p-4">
           <div className="flex items-center justify-between gap-2">
-            <span className="text-[9px] font-semibold tracking-[0.15em] text-white/50 uppercase sm:text-[10px]">MVP sprint</span>
+            <span className="text-[9px] font-semibold tracking-[0.15em] text-white/50 uppercase sm:text-[10px]">Your MVP</span>
             <span className="rounded-full bg-primary px-2 py-0.5 text-[9px] font-bold text-ink sm:text-[10px]">Day 21/30</span>
           </div>
-          <p className="mt-2 text-xs font-bold sm:text-sm">Week 3 · Build</p>
+          <p className="mt-2 text-xs font-bold sm:text-sm">Building · on schedule</p>
           <div className="mt-2 h-1.5 overflow-clip rounded-full bg-white/10">
             <div className="h-full w-[70%] rounded-full bg-gradient-to-r from-primary/60 to-primary" />
           </div>
@@ -218,14 +218,14 @@ function BuildScene() {
         </div>
       </Float>
 
-      {/* Weekly demo call */}
+      {/* Demo call */}
       <Float className="top-[6%] left-0 hidden sm:block" delay={2.4}>
         <div className="-rotate-3 flex items-center gap-2.5 rounded-2xl bg-surface py-2 pr-3.5 pl-2 shadow-xl ring-1 ring-line">
           <span className="flex size-8 items-center justify-center rounded-xl bg-primary-soft text-primary-strong">
             <Video className="size-4" />
           </span>
           <span className="flex flex-col leading-tight">
-            <span className="text-xs font-semibold">Weekly demo</span>
+            <span className="text-xs font-semibold">Demo call</span>
             <span className="text-[10px] text-muted">Friday · 30 min</span>
           </span>
           <span className="ml-1 flex -space-x-2">

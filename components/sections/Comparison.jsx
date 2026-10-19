@@ -46,7 +46,7 @@ function OptionCard({ name, col, featured }) {
       {featured && (
         <>
           <div aria-hidden className="bg-dots pointer-events-none absolute inset-0 text-white/[0.05]" />
-          <div aria-hidden className="pointer-events-none absolute -top-24 -right-24 size-64 rounded-full bg-primary/25 blur-3xl" />
+          <div aria-hidden className="pointer-events-none absolute -top-24 -right-24 size-64 glow scale-150 opacity-25" />
         </>
       )}
 

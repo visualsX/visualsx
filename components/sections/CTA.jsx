@@ -18,7 +18,7 @@ export default function CTA({
     <section className="container-x section-y">
       <div className="relative overflow-clip rounded-[36px] bg-surface shadow-[0_30px_80px_-50px_rgb(20_17_15/0.35)] ring-1 ring-line">
         <div aria-hidden className="bg-dots pointer-events-none absolute inset-0 text-ink/[0.04]" />
-        <div aria-hidden className="pointer-events-none absolute -top-40 -right-40 size-[28rem] rounded-full bg-primary/10 blur-3xl" />
+        <div aria-hidden className="pointer-events-none absolute -top-40 -right-40 size-[28rem] glow scale-150 opacity-10" />
 
         <div className="relative grid gap-10 px-5 py-10 sm:px-10 sm:py-14 lg:grid-cols-[1.25fr_1fr] lg:items-center lg:gap-16 lg:px-14">
           <div className="flex min-w-0 flex-col items-start gap-6">

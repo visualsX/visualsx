@@ -24,11 +24,14 @@ export default function ClientMarquee() {
   const row = [...projects, ...projects, ...projects];
 
   return (
-    <section aria-label="Clients" className="border-y border-line bg-surface/60 py-6">
+    <section aria-label="Clients" className="border-y border-line bg-surface py-6">
       <div className="container-x flex flex-col items-center gap-4 md:flex-row md:gap-10">
         <p className="shrink-0 text-sm font-medium text-muted">Trusted by teams at</p>
-        <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <ul className="flex w-max animate-marquee items-center hover:[animation-play-state:paused]">
+        <div className="relative w-full overflow-hidden">
+          {/* Edge fades as overlays: cheaper than a CSS mask, which Safari repaints on every frame */}
+          <span aria-hidden className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-surface to-transparent" />
+          <span aria-hidden className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-surface to-transparent" />
+          <ul className="flex w-max animate-marquee items-center will-change-transform hover:[animation-play-state:paused]">
             {[...row, ...row].map((project, i) => {
               const hidden = i >= projects.length;
               return (

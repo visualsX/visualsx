@@ -38,7 +38,7 @@ function ProjectCard({ project, featured }) {
         style={{ backgroundColor: project.tint }}
       >
         <div aria-hidden className="bg-dots pointer-events-none absolute inset-0 text-ink/[0.06]" />
-        <span className="absolute top-4 left-4 rounded-full bg-white/70 px-3 py-1 text-xs font-semibold backdrop-blur">
+        <span className="absolute top-4 left-4 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold">
           {project.category}
         </span>
         <span className="absolute top-3 right-3 flex size-10 items-center justify-center rounded-full bg-white text-ink shadow-sm transition-all duration-300 group-hover:rotate-45 group-hover:bg-ink group-hover:text-white">

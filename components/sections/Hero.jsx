@@ -16,13 +16,13 @@ export default function Hero() {
     <section className="relative -mt-[68px] overflow-clip pt-[68px] sm:-mt-[76px] sm:pt-[76px]">
       {/* Backdrop: dotted grid, warm glow and orbit rings behind the visual */}
       <div aria-hidden className="bg-dots pointer-events-none absolute inset-0 text-ink/[0.07] [mask-image:radial-gradient(ellipse_at_70%_40%,black_20%,transparent_70%)]" />
-      <div aria-hidden className="pointer-events-none absolute top-[10%] right-[-15%] size-[700px] rounded-full bg-primary/25 blur-[140px] lg:right-[-5%]" />
+      <div aria-hidden className="pointer-events-none absolute top-[10%] right-[-15%] size-[700px] glow scale-150 opacity-25 lg:right-[-5%]" />
 
       <div className="container-x relative grid items-center gap-14 pt-8 pb-16 sm:pt-12 lg:min-h-[calc(100svh-76px)] lg:grid-cols-[1.05fr_1fr] lg:gap-8 lg:pb-20">
         <div className="flex min-w-0 flex-col items-start gap-8">
           <Link
             href="/work"
-            className="animate-fade-up group inline-flex items-center gap-3 rounded-full border border-line bg-surface/80 py-1.5 pr-1.5 pl-3 text-sm font-medium backdrop-blur transition-colors hover:border-primary/40"
+            className="animate-fade-up group inline-flex items-center gap-3 rounded-full border border-line bg-surface py-1.5 pr-1.5 pl-3 text-sm font-medium transition-colors hover:border-primary/40"
           >
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-60" />
@@ -128,7 +128,7 @@ function BuildScene() {
       {/* Orbit rings */}
       <div className="absolute inset-[4%] rounded-full border border-dashed border-ink/10" />
       <div className="absolute inset-[18%] rounded-full border border-ink/[0.07]" />
-      <div className="animate-spin-slow absolute inset-[4%]">
+      <div className="animate-spin-slow absolute inset-[4%] will-change-transform">
         <span className="absolute top-1/2 -left-1.5 size-3 rounded-full bg-primary shadow-[0_0_0_6px_rgb(249_115_22/0.15)]" />
       </div>
 
@@ -277,7 +277,7 @@ function BuildScene() {
 
 function Float({ className, delay = 0, children }) {
   return (
-    <div className={cn("animate-float absolute", className)} style={{ animationDelay: `-${delay}s` }}>
+    <div className={cn("animate-float absolute will-change-transform", className)} style={{ animationDelay: `-${delay}s` }}>
       {children}
     </div>
   );

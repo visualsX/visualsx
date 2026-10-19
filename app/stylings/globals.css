@@ -37,37 +37,37 @@
 
   @keyframes marquee {
     from {
-      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translate3d(-50%, 0, 0);
     }
   }
   @keyframes rise {
     from {
-      transform: translateY(105%);
+      transform: translate3d(0, 105%, 0);
     }
     to {
-      transform: translateY(0);
+      transform: translate3d(0, 0, 0);
     }
   }
   @keyframes fade-up {
     from {
       opacity: 0;
-      transform: translateY(16px);
+      transform: translate3d(0, 16px, 0);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: translate3d(0, 0, 0);
     }
   }
   @keyframes float {
     0%,
     100% {
-      transform: translateY(0);
+      transform: translate3d(0, 0, 0);
     }
     50% {
-      transform: translateY(-12px);
+      transform: translate3d(0, -12px, 0);
     }
   }
   @keyframes draw {
@@ -173,21 +173,93 @@
   }
 }
 
+/* Soft orange glow. A plain radial gradient instead of a blurred shape: Safari re-renders
+   CSS blur filters while scrolling, gradients are drawn once. Set strength with opacity-*. */
+@utility glow {
+  pointer-events: none;
+  background-image: radial-gradient(closest-side, var(--primary), rgb(249 115 22 / 0.45) 40%, rgb(249 115 22 / 0) 100%);
+}
+
 /* Subtle dotted grid used behind dark panels and the hero */
 @utility bg-dots {
   background-image: radial-gradient(currentColor 1px, transparent 1px);
   background-size: 22px 22px;
 }
 
+/* Header bar: flat at the top of the page, a floating pill once scrolled ([data-floating]).
+   The bar's own box never changes size. When it shrank, the page moved up under the scroll
+   position, scroll anchoring pulled scrollY back over the threshold and the bar flipped back
+   and forth. Only transform and opacity animate, so Safari composites the motion instead of
+   re-laying out and re-blurring the bar on every frame. */
+@layer components {
+  .site-bar {
+    --bar-pad: 1.25rem;
+    --pill-margin: 0.75rem;
+    --pill-pad-start: 1rem;
+    --pill-pad-end: 0.5rem;
+    /* 100cqw is the bar's content box, so the padding is added back to get the full bar width */
+    --pill-w: min(100cqw + 2 * var(--bar-pad) - 2 * var(--pill-margin), 56rem);
+    --pill-inset: calc((100cqw + 2 * var(--bar-pad) - var(--pill-w)) / 2);
+    --bar-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+    container-type: inline-size;
+    padding-inline: var(--bar-pad);
+
+    @media (width >= 40rem) {
+      --bar-pad: 2rem;
+      --pill-margin: 1.25rem;
+      --pill-pad-start: 1.25rem;
+    }
+  }
+  .site-bar-pill {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: var(--pill-w);
+    height: 3.5rem;
+    margin: auto;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(1.1, 1.15);
+    transition:
+      opacity 500ms var(--bar-ease),
+      transform 500ms var(--bar-ease);
+  }
+  .site-bar-start,
+  .site-bar-mid,
+  .site-bar-end {
+    transition:
+      transform 500ms var(--bar-ease),
+      color 150ms,
+      background-color 150ms;
+  }
+  .site-bar[data-floating] {
+    & .site-bar-pill {
+      opacity: 1;
+      transform: none;
+    }
+    & .site-bar-start {
+      transform: translateX(calc(var(--pill-inset) + var(--pill-pad-start) - var(--bar-pad)));
+    }
+    & .site-bar-mid {
+      transform: translateX(calc((var(--pill-pad-start) - var(--pill-pad-end)) / 2));
+    }
+    & .site-bar-end {
+      transform: translateX(calc(var(--bar-pad) - var(--pill-inset) - var(--pill-pad-end)));
+    }
+  }
+}
+
 /* Scroll-driven reveals. Without support (or with reduced motion) the final state shows. */
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
     .reveal-wipe {
+      transform-origin: left center;
       animation: reveal-wipe linear both;
       animation-timeline: view();
       animation-range: entry 0% cover 40%;
     }
     .reveal-wipe-y {
+      transform-origin: center top;
       animation: reveal-wipe-y linear both;
       animation-timeline: view();
       animation-range: entry 10% cover 60%;
@@ -197,19 +269,19 @@
 
 @keyframes reveal-wipe-y {
   from {
-    clip-path: inset(0 0 100% 0);
+    transform: scaleY(0);
   }
   to {
-    clip-path: inset(0 0 0 0);
+    transform: scaleY(1);
   }
 }
 
 @keyframes reveal-wipe {
   from {
-    clip-path: inset(0 100% 0 0);
+    transform: scaleX(0);
   }
   to {
-    clip-path: inset(0 0 0 0);
+    transform: scaleX(1);
   }
 }
 

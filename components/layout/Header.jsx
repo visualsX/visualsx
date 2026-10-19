@@ -39,19 +39,21 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 pt-3">
+      {/* The bar keeps one size; the pill and the items move with transforms (see .site-bar in globals.css). */}
       <div
-        className={cn(
-          "relative z-50 mx-auto flex items-center justify-between gap-4 transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
-          floating
-            ? "h-14 w-[calc(100%-1.5rem)] max-w-4xl rounded-full bg-surface/75 pr-2 pl-4 shadow-[0_12px_40px_-12px_rgb(20_17_15/0.25)] ring-1 ring-line backdrop-blur-xl sm:w-[calc(100%-2.5rem)] sm:pl-5"
-            : "h-14 w-full max-w-7xl px-5 sm:h-16 sm:px-8"
-        )}
+        data-floating={floating || undefined}
+        className="site-bar relative z-50 mx-auto flex h-14 w-full max-w-7xl items-center justify-between gap-4 sm:h-16"
       >
+        <span
+          aria-hidden
+          className="site-bar-pill rounded-full bg-surface/75 shadow-[0_12px_40px_-12px_rgb(20_17_15/0.25)] ring-1 ring-line backdrop-blur-md"
+        />
+
         <Link
           href="/"
           onClick={() => setOpen(false)}
           className={cn(
-            "group flex shrink-0 items-center gap-2 text-xl font-bold tracking-tight transition-colors",
+            "site-bar-start group flex shrink-0 items-center gap-2 text-xl font-bold tracking-tight",
             open && "text-white"
           )}
         >
@@ -67,7 +69,7 @@ export default function Header() {
           <span className="sr-only">home</span>
         </Link>
 
-        <nav aria-label="Main" className="hidden items-center rounded-full p-1 md:flex">
+        <nav aria-label="Main" className="site-bar-mid hidden items-center rounded-full p-1 md:flex">
           {nav.map((item) => {
             const active = isActive(item.href);
             return (
@@ -89,7 +91,7 @@ export default function Header() {
 
         <Link
           href="/contact"
-          className="group hidden h-11 shrink-0 items-center gap-3 rounded-full bg-ink py-1 pr-1 pl-5 text-sm font-semibold text-white transition-colors hover:bg-ink-2 md:flex"
+          className="site-bar-end group hidden h-11 shrink-0 items-center gap-3 rounded-full bg-ink py-1 pr-1 pl-5 text-sm font-semibold text-white hover:bg-ink-2 md:flex"
         >
           Start a project
           <span className="flex size-9 items-center justify-center rounded-full bg-primary transition-transform duration-300 group-hover:rotate-45">
@@ -104,7 +106,7 @@ export default function Header() {
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
           className={cn(
-            "relative flex size-11 items-center justify-center rounded-full transition-colors md:hidden",
+            "site-bar-end relative flex size-11 items-center justify-center rounded-full md:hidden",
             open ? "bg-white/10 text-white" : "bg-ink text-white"
           )}
         >
@@ -128,7 +130,7 @@ export default function Header() {
       {open && (
         <div id="mobile-menu" className="fixed inset-0 z-40 flex flex-col overflow-y-auto bg-ink text-white md:hidden">
           <div aria-hidden className="bg-dots pointer-events-none absolute inset-0 text-white/[0.05]" />
-          <div aria-hidden className="pointer-events-none absolute -right-24 -bottom-24 size-96 rounded-full bg-primary/30 blur-[120px]" />
+          <div aria-hidden className="pointer-events-none absolute -right-24 -bottom-24 size-96 glow scale-150 opacity-30" />
 
           <nav aria-label="Mobile" className="relative flex flex-1 flex-col px-6 pt-28 pb-8">
             <ul className="flex flex-col">

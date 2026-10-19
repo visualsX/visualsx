@@ -22,7 +22,7 @@ export default function CareersPage() {
         />
         <div
           aria-hidden
-          className="pointer-events-none absolute -top-56 left-1/2 size-[560px] -translate-x-1/2 rounded-full bg-primary/15 blur-[120px]"
+          className="pointer-events-none absolute -top-56 left-1/2 size-[560px] -translate-x-1/2 glow scale-150 opacity-15"
         />
         <div className="container-x relative flex flex-col items-center gap-7 pt-14 pb-16 text-center sm:pt-24 sm:pb-20">
           <Eyebrow>Careers</Eyebrow>

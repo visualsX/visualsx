@@ -11,7 +11,7 @@ export default function Footer() {
       <div aria-hidden className="bg-dots pointer-events-none absolute inset-0 text-white/[0.05]" />
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-40 left-1/2 size-[640px] -translate-x-1/2 rounded-full bg-primary/20 blur-[140px]"
+        className="pointer-events-none absolute -top-40 left-1/2 size-[640px] -translate-x-1/2 glow scale-150 opacity-20"
       />
 
       {/* Links */}

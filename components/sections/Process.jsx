@@ -9,7 +9,7 @@ export default function Process() {
     <section id="process" className="container-x">
       <div className="relative overflow-clip rounded-[36px] bg-ink px-5 py-12 text-white sm:px-10 sm:py-16 lg:px-14">
         <div aria-hidden className="bg-dots pointer-events-none absolute inset-0 text-white/[0.06]" />
-        <div aria-hidden className="pointer-events-none absolute -right-32 -bottom-40 size-96 rounded-full bg-primary/25 blur-[120px]" />
+        <div aria-hidden className="pointer-events-none absolute -right-32 -bottom-40 size-96 glow scale-150 opacity-25" />
 
         <div className="relative">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">

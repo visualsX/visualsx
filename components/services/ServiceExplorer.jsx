@@ -110,7 +110,7 @@ export default function ServiceExplorer() {
               className="relative m-2 flex min-h-56 items-center justify-center overflow-clip rounded-[26px] bg-background px-6 pt-12 pb-8 sm:min-h-64 sm:p-8"
             >
               <div className="bg-dots pointer-events-none absolute inset-0 text-ink/[0.06]" />
-              <div className="pointer-events-none absolute -bottom-20 -left-20 size-64 rounded-full bg-primary/15 blur-3xl" />
+              <div className="pointer-events-none absolute -bottom-20 -left-20 size-64 glow scale-150 opacity-15" />
               <span className="absolute top-5 left-5 font-mono text-xs text-muted">
                 {String(active + 1).padStart(2, "0")} / {String(services.length).padStart(2, "0")}
               </span>

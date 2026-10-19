@@ -32,7 +32,7 @@ export default function FAQ() {
 
           <div className="relative hidden overflow-clip rounded-[28px] bg-ink p-7 text-white lg:block">
             <div aria-hidden className="bg-dots pointer-events-none absolute inset-0 text-white/[0.06]" />
-            <div aria-hidden className="pointer-events-none absolute -right-16 -bottom-16 size-48 rounded-full bg-primary/30 blur-3xl" />
+            <div aria-hidden className="pointer-events-none absolute -right-16 -bottom-16 size-48 glow scale-150 opacity-30" />
             <div className="relative flex flex-col gap-5">
               <div className="flex -space-x-3">
                 {founders.map((f) => (
